@@ -1,0 +1,19 @@
+{
+  "name": "PrepSpace \u2014 SSC CHSL Journal",
+  "short_name": "PrepSpace",
+  "description": "SSC CHSL study planner: syllabus, sessions, tests and mistake bank.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f2019",
+  "theme_color": "#0f2019",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
