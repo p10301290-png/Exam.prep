@@ -1,9 +1,10 @@
 {
-  "name": "PrepSpace \u2014 SSC CHSL Journal",
+  "id": "/Exam.prep/",
+  "name": "PrepSpace — SSC CHSL Journal",
   "short_name": "PrepSpace",
   "description": "SSC CHSL study planner: syllabus, sessions, tests and mistake bank.",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/Exam.prep/",
+  "scope": "/Exam.prep/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#0f2019",
