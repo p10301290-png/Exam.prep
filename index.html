@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#f6f3ec">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.png" type="image/png">
-<link rel="apple-touch-icon" href="./icon.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
 <meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="application-name" content="PrepSpace">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style id="prepspace-premium">
@@ -508,14 +508,10 @@ html[data-amoled=on] .cl-user{background:#000;border-color:rgba(var(--rgb),.3);b
 <div class="app">
 <aside class="sidebar">
   <div class="brand"><div class="brandmark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="m9 8 2 2 4-4"/></svg></div><div><strong>PrepSpace</strong><small id="brandSub">SSC CHSL workspace</small></div></div>
-  <div class="navlabel">Workspace</div>
-  <nav class="nav" id="sideNav">
-    <button class="active" data-view="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="8" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="12" width="7" height="9" rx="2"/><rect x="3" y="15" width="7" height="6" rx="2"/></svg>Overview</button>
-    <button data-view="syllabus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20M8 7h7M8 11h7"/></svg>Syllabus planner</button>
-    <button data-view="study"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Study sessions</button>
-    <button data-view="tests"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4h12v17H4V4h4Z"/><path d="M9 2h6v4H9zM8 11h8M8 15h5"/></svg>Test centre</button>
-    <button data-view="mistakes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4m0 4h.01"/><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/></svg>Mistake bank</button>
-  </nav>
+  <div class="navlabel">Learn</div>
+  <nav class="nav" id="sideNav"><button class="active" data-view="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="8" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="12" width="7" height="9" rx="2"/><rect x="3" y="15" width="7" height="6" rx="2"/></svg>Overview</button><button data-view="syllabus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20M8 7h7M8 11h7"/></svg>Syllabus planner</button><button data-view="study"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Study sessions</button></nav>
+  <div class="navlabel">Practice</div>
+  <nav class="nav"><button data-view="train"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>Practice hub</button><button data-view="tests"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4h12v17H4V4h4Z"/><path d="M9 2h6v4H9zM8 11h8M8 15h5"/></svg>Test centre</button><button data-view="mistakes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4m0 4h.01"/><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/></svg>Mistake bank</button></nav>
   <div class="navlabel">Personal</div>
   <nav class="nav"><button data-view="insights"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 6-7"/></svg>Progress & insights</button><button data-view="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.6a7.8 7.8 0 0 1-1.5.9l-.3 1.8h-2.8l-.3-1.8a7.8 7.8 0 0 1-1.5-.9l-1.7.6-1.4-2.4 1.4-1.1a7 7 0 0 1 0-1.8l-1.4-1.1 1.4-2.4 1.7.6a7.8 7.8 0 0 1 1.5-.9l.3-1.8h2.8l.3 1.8a7.8 7.8 0 0 1 1.5.9l1.7-.6 1.4 2.4-1.4 1.1a7 7 0 0 1 0 1.8Z"/></svg>Settings & backup</button></nav>
   <div class="sidebar-bottom"><div class="mini">Your daily rhythm</div><strong>Small wins, every day.</strong><p>Keep the loop simple: learn → practise → analyse → revise.</p></div>
@@ -523,20 +519,22 @@ html[data-amoled=on] .cl-user{background:#000;border-color:rgba(var(--rgb),.3);b
 <main class="main">
 <header class="topbar"><div><div class="eyebrow" id="eyebrow">YOUR PREPARATION, IN FOCUS</div><h1 id="pageTitle">Good to see you.</h1><p id="pageSub">Your SSC CHSL journey, organised one session at a time.</p></div><div class="top-actions"><button class="iconbtn themebtn" id="themeBtn" title="Switch light / dark" aria-label="Switch light or dark theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><button class="iconbtn" id="backupTop" title="Backup data"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg></button><button class="btn primary" id="quickAdd"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>Log study</span></button></div></header>
 <section class="view active" id="view-dashboard">
-  <div class="grid stats">
-    <div class="card"><div class="stat-top">Focused hours <span class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span></div><div class="stat-value" id="statHours">0.0<span style="font-size:14px;color:#8c93a3"> h</span></div><div class="stat-foot">Your logged study time</div></div>
-    <div class="card"><div class="stat-top">Questions solved <span class="stat-icon" style="background:#e5f8ef;color:#16805b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m5 12 4 4L19 6"/></svg></span></div><div class="stat-value" id="statQuestions">0</div><div class="stat-foot">Practice + PYQs</div></div>
-    <div class="card"><div class="stat-top">Tests attempted <span class="stat-icon" style="background:#fff3e1;color:#b66a18"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 4h12v17H4V4h4Z"/><path d="M9 2h6v4H9zM8 11h8M8 15h5"/></svg></span></div><div class="stat-value" id="statTests">0</div><div class="stat-foot">Full mocks + sectional</div></div>
-    <div class="card"><div class="stat-top">Syllabus progress <span class="stat-icon" style="background:#ffe9ee;color:#bf4b62"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span></div><div class="stat-value" id="statSyllabus">0%</div><div class="stat-foot">Topics marked complete/revised</div></div>
+  <div class="card" id="pxCountdown"></div>
+  <div class="card hd-stats">
+    <div class="hd-stat"><span class="hd-ico" style="background:linear-gradient(135deg,#fbbf24,#d97706)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><b id="statHours">0.0<span style="font-size:14px;color:#8c93a3"> h</span></b><small>Study hours</small></div>
+    <div class="hd-stat"><span class="hd-ico" style="background:linear-gradient(135deg,#34d399,#059669)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><b id="statQuestions">0</b><small>Questions solved</small></div>
+    <div class="hd-stat"><span class="hd-ico" style="background:linear-gradient(135deg,#a78bfa,#7c3aed)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 4h12v17H4V4h4Z"/><path d="M9 2h6v4H9zM8 11h8M8 15h5"/></svg></span><b id="statTests">0</b><small>Tests given</small></div>
+    <span id="statSyllabus" hidden></span>
   </div>
-  <div class="grid dashboard-grid">
-    <div class="grid" style="gap:16px">
-      <div class="card"><div class="section-head"><div><h2>Subject progress</h2><p>At a glance, see where your effort is going.</p></div><button class="linkbtn" data-go="syllabus">Open syllabus ↗</button></div><div class="subject-list" id="subjectProgress"></div></div>
+  <div class="hd-grid">
+    <div class="hd-col">
+      <div class="card focus-card"><div class="eyebrow">YOUR NEXT BEST STEP</div><h2 id="focusTitle">Start with a foundation chapter.</h2><p id="focusDesc">Choose one high-priority topic, learn the basics, then solve a small set of questions.</p><div class="focus-meta"><span class="pill" id="focusPriority">Very High priority</span><span class="pill" id="focusPhase">Phase 1</span></div><button class="btn" id="focusStart">Open recommended chapter ↗</button></div>
+      <div class="card" id="pxRevision"></div>
       <div class="card"><div class="section-head"><div><h2>Today’s plan</h2><p id="planSub">Your daily blueprint, one slot at a time.</p></div><span class="pill purple" id="todayLabel">TODAY</span></div><div class="task-list" id="todayTasks"></div></div>
     </div>
-    <div class="grid" style="gap:16px;align-content:start">
-      <div class="card focus-card"><div class="eyebrow">YOUR NEXT BEST STEP</div><h2 id="focusTitle">Start with a foundation chapter.</h2><p id="focusDesc">Choose one high-priority topic, learn the basics, then solve a small set of questions.</p><div class="focus-meta"><span class="pill" id="focusPriority">Very High priority</span><span class="pill" id="focusPhase">Phase 1</span></div><button class="btn" id="focusStart">Open recommended chapter ↗</button></div>
-      <div class="card"><div class="section-head"><div><h2>Study consistency</h2><p>Recent logged days</p></div><span class="pill green">Last 14 days</span></div><div class="mini-calendar" id="miniCalendar"></div><div style="display:flex;gap:14px;margin-top:13px;font-size:10px;color:var(--muted)"><span>● Study logged</span><span style="color:var(--purple)">● Today</span></div></div>
+    <div class="hd-col">
+      <div class="card"><div class="section-head"><div><h2>Subject progress</h2><p>Where your effort is going.</p></div><button class="linkbtn" data-go="syllabus">Syllabus ↗</button></div><div class="subject-list" id="subjectProgress"></div></div>
+      <div class="card"><div class="section-head"><div><h2>Study consistency</h2><p>Last 14 days</p></div><span class="pill amber" id="hdStreak">Streak</span></div><div class="mini-calendar" id="miniCalendar"></div><div class="hd-leg"><span><i class="l"></i>Study logged</span><span><i class="t"></i>Today</span></div></div>
     </div>
   </div>
 </section>
@@ -595,6 +593,7 @@ html[data-amoled=on] .cl-user{background:#000;border-color:rgba(var(--rgb),.3);b
   </div>
 </section>
 <section class="view" id="view-mistakes">
+  <div class="card" id="pxDrillCard"></div>
   <div class="grid split">
     <div class="card"><div class="section-head"><div><h2>Capture a mistake</h2><p>Wrong answers are data. Record the reason and fix it.</p></div><span class="pill rose">Learn loop</span></div>
       <form id="mistakeForm"><div class="form-grid">
@@ -619,13 +618,14 @@ html[data-amoled=on] .cl-user{background:#000;border-color:rgba(var(--rgb),.3);b
 </section>
 <section class="view" id="view-settings">
   <div class="set-chips" role="navigation" aria-label="Settings sections"><a href="#set-account">☁ Account</a><a href="#set-study">◎ Study</a><a href="#set-look">✦ Look &amp; feel</a><a href="#set-data">⇅ Data</a></div>
-  <div class="callout">Progress is saved on this device. Google login se cloud sync chalu karo, aur phir bhi regular backup export karte raho.</div>
+  <div class="callout">Your progress is saved on this device. Sign in with Google to sync it to the cloud, and keep exporting backups regularly.</div>
     <div class="grid settings-grid">
     <div class="set-label" id="set-account"><span>Account</span><small>Login & cloud sync</small></div>
-    <div class="card cloud-card" id="cloudCard"><div class="section-head"><div><h2>Account &amp; sync</h2><p>Google se login karo, data sab devices par sync hoga.</p></div></div><div id="cloudBody"></div></div>
+    <div class="card cloud-card" id="cloudCard"><div class="section-head"><div><h2>Account &amp; sync</h2><p>Sign in with Google to sync your data across all your devices.</p></div></div><div id="cloudBody"></div></div>
     <div class="set-label" id="set-study"><span>Study</span><small>Exam & daily targets</small></div>
-    <div class="card exam-card"><div class="section-head"><div><h2>Exam</h2><p>Sirf chuna hua exam poore app mein dikhega: syllabus, Today’s plan, progress aur forms.</p></div></div><div class="exam-choices" id="examChoices" role="radiogroup" aria-label="Choose exam"><button type="button" class="exam-choice" role="radio" data-exam="chsl" aria-checked="true"><b>SSC CHSL</b><small>Tier-I + Tier-II · 101 chapters<br>Computer + Typing included</small></button><button type="button" class="exam-choice" role="radio" data-exam="mts" aria-checked="false"><b>SSC MTS</b><small>GA + English first · 89 chapters<br>Maths/Reasoning sirf qualifying</small></button></div><small class="muted" style="display:block;margin-top:10px;font-size:12px">Dono exams ka progress alag save rehta hai, switch karne se kuch delete nahi hota.</small></div>
-    <div class="card"><div class="section-head"><div><h2>Study preferences</h2><p>Set a realistic daily target.</p></div></div><form id="settingsForm"><div class="field"><label>Daily focused-hours target</label><input type="number" name="targetHours" min="1" max="12" step=".5" value="5"></div><div class="field" style="margin-top:14px"><label>Default question target per session</label><input type="number" name="targetQuestions" min="5" max="300" step="5" value="30"></div><div class="field" style="margin-top:14px"><label>Study plan start date</label><input type="date" name="planStart" value="2026-11-09"><small class="muted" style="display:block;margin-top:6px;font-size:12px">Week 1 isi date ke hafte se gina jaata hai (default: Mon 9 Nov).</small></div><div class="field" style="margin-top:14px"><label>Daily schedule (apne time ke hisaab se)</label><div class="slot-row slot-head"><span>Din ki shuruaat</span><input type="time" id="slotStart" value="05:00" aria-label="Day start time"></div><div id="slotRows"></div><small class="muted" style="display:block;margin-top:8px;font-size:12px">Shuruaat ka time badlo to saare slots usi hisaab se shift ho jaate hain. Phir har slot ko alag se bhi badal sakte ho.</small><button class="cl-link" id="slotReset" type="button">Default timings wapas lao</button></div><div class="form-actions"><button class="btn primary" type="submit">Save preferences</button></div></form></div>
+    <div class="card exam-card"><div class="section-head"><div><h2>Exam</h2><p>Only the selected exam is shown across the app: syllabus, today’s plan, progress and forms.</p></div></div><div class="exam-choices" id="examChoices" role="radiogroup" aria-label="Choose exam"><button type="button" class="exam-choice" role="radio" data-exam="chsl" aria-checked="true"><b>SSC CHSL</b><small>Tier-I + Tier-II · 101 chapters<br>Computer + Typing included</small></button><button type="button" class="exam-choice" role="radio" data-exam="mts" aria-checked="false"><b>SSC MTS</b><small>GA + English first · 89 chapters<br>Maths/Reasoning qualifying only</small></button></div><small class="muted" style="display:block;margin-top:10px;font-size:12px">Progress for each exam is stored separately. Switching exams never deletes anything.</small></div>
+    <div class="card" id="examDateCard"><div class="section-head"><div><h2>Exam date</h2><p>Powers the countdown and daily pace on Home.</p></div></div><div class="pxs-row"><input type="date" id="pxExamDate" class="pxs-inp" aria-label="Exam date"><button type="button" class="btn soft" data-px-cleardate>Clear</button></div><div class="pxs-note" id="pxExamNote"></div></div>
+    <div class="card"><div class="section-head"><div><h2>Study preferences</h2><p>Set a realistic daily target.</p></div></div><form id="settingsForm"><div class="field"><label>Daily focused-hours target</label><input type="number" name="targetHours" min="1" max="12" step=".5" value="5"></div><div class="field" style="margin-top:14px"><label>Default question target per session</label><input type="number" name="targetQuestions" min="5" max="300" step="5" value="30"></div><div class="field" style="margin-top:14px"><label>Study plan start date</label><input type="date" name="planStart" value="2026-11-09"><small class="muted" style="display:block;margin-top:6px;font-size:12px">Week 1 is counted from the week of this date (default: Mon 9 Nov).</small></div><div class="field" style="margin-top:14px"><label>Daily schedule (set your own timings)</label><div class="slot-row slot-head"><span>Day starts</span><input type="time" id="slotStart" value="05:00" aria-label="Day start time"></div><div id="slotRows"></div><small class="muted" style="display:block;margin-top:8px;font-size:12px">Change the start time and every slot shifts with it. You can still edit each slot separately.</small><button class="cl-link" id="slotReset" type="button">Reset to default timings</button></div><div class="form-actions"><button class="btn primary" type="submit">Save preferences</button></div></form></div>
     <div class="set-label" id="set-look"><span>Look & feel</span><small>Theme, haptics & sound</small></div>
     <div class="card theme-settings"><div class="section-head"><div><h2>Appearance</h2><p>A consistent PrepSpace theme, designed for comfortable daily study.</p></div><span class="theme-preview-icon" aria-hidden="true">✦</span></div>
       <div class="appearance-mode"><div><strong>Light / dark mode</strong><small>Switch the app appearance anytime.</small></div><button type="button" class="btn" id="themeSettingBtn"><span id="themeSettingIcon">☾</span><span id="themeSettingLabel">Switch to dark</span></button></div><div class="appearance-mode"><div><strong>Accent colour</strong><small>Choose a colour theme for the whole app. Saved on this device.</small></div></div><div class="palette-options" id="paletteOptions" role="group" aria-label="Accent colour"><button type="button" class="palette-option" data-palette="gold" aria-pressed="false"><span class="swatch" style="background:linear-gradient(135deg,#e8c777,#a67c1c)"></span><span>Gold</span></button><button type="button" class="palette-option" data-palette="sapphire" aria-pressed="false"><span class="swatch" style="background:linear-gradient(135deg,#4f86f5,#2a62d4)"></span><span>Sapphire</span></button><button type="button" class="palette-option" data-palette="violet" aria-pressed="false"><span class="swatch" style="background:linear-gradient(135deg,#9a6ff5,#7c4de0)"></span><span>Violet</span></button><button type="button" class="palette-option" data-palette="rose" aria-pressed="false"><span class="swatch" style="background:linear-gradient(135deg,#f2698f,#bb3b63)"></span><span>Rose</span></button><button type="button" class="palette-option" data-palette="emerald" aria-pressed="false"><span class="swatch" style="background:linear-gradient(135deg,#38c08a,#1b9965)"></span><span>Emerald</span></button><button type="button" class="palette-option" data-palette="sunset" aria-pressed="false"><span class="swatch" style="background:linear-gradient(135deg,#ff8059,#c2423b)"></span><span>Sunset</span></button></div>
@@ -639,16 +639,19 @@ html[data-amoled=on] .cl-user{background:#000;border-color:rgba(var(--rgb),.3);b
       <p class="fx-note" id="fxNote"></p>
     </div>
     <div class="set-label" id="set-data"><span>Data</span><small>Backup & reset</small></div>
-    <div class="card"><div class="section-head"><div><h2>Backup & data</h2><p>Local backup — sync ke saath bhi ek copy safe rakho.</p></div></div><div class="data-stats" id="dataStats"></div><div class="data-actions"><button class="btn primary" id="exportBackup">Export full backup ↓</button><label class="btn" style="margin:0;cursor:pointer">Import backup ↑<input type="file" id="importBackup" accept=".json,application/json" hidden></label><button class="btn" id="exportStudy">Study log CSV ↓</button></div><p class="fx-note">Tip: export a backup every week. Importing a backup replaces current data, so you will be asked to confirm first.</p></div>
+    <div class="card"><div class="section-head"><div><h2>Backup & data</h2><p>Local backup. Keep a safe copy even when sync is on.</p></div></div><div class="data-stats" id="dataStats"></div><div class="data-actions"><button class="btn primary" id="exportBackup">Export full backup ↓</button><label class="btn" style="margin:0;cursor:pointer">Import backup ↑<input type="file" id="importBackup" accept=".json,application/json" hidden></label><button class="btn" id="exportStudy">Study log CSV ↓</button></div><p class="fx-note">Tip: export a backup every week. Importing a backup replaces current data, so you will be asked to confirm first.</p></div>
     <div class="card danger-zone" style="grid-column:1/-1"><div class="section-head"><div><h2>Danger zone</h2><p>Every action here asks for confirmation, and a safety copy is kept so you can undo.</p></div><span class="dz-ico" aria-hidden="true">!</span></div><div id="dzList"></div><div class="dz-undo" id="undoBox" hidden></div></div>
   </div>
   <div class="card" style="margin-top:16px"><div class="section-head"><div><h2>About this syllabus</h2><p>Beginner-first sequence; 2027 notification pending.</p></div></div><p class="muted" style="font-size:12px;line-height:1.7">This planner is a study aid, not an official SSC publication. The 2027 CHSL notification may change the pattern or syllabus. This version maps the latest available CHSL notification used for this edit (2025); chapter-level priorities are indicative PYQ-informed study guidance, not guaranteed weightage. Computer Knowledge and Skill/Typing Test are Tier-II components; typing requirements vary by post. Cross-check the official SSC notification when the 2027 notice is released.</p><p class="muted" id="examNote" style="font-size:12px;line-height:1.7;margin-top:10px"></p><button class="btn" id="openSyllabus">Review syllabus ↗</button></div>
 </section>
 </main>
 </div>
-<div class="mobile-more-menu" id="mobileMoreMenu" hidden><button data-view="mistakes"><span class="more-menu-icon">!</span><span><strong>Mistake Bank</strong><small>Review and fix weak areas</small></span></button><button data-view="insights"><span class="more-menu-icon">↗</span><span><strong>Progress & insights</strong><small>Review your progress</small></span></button><button data-view="settings"><span class="more-menu-icon">⚙</span><span><strong>Settings & backup</strong><small>Display mode and data</small></span></button></div>
-<nav class="mobile-nav" id="mobileNav" aria-label="Main navigation"><i class="ind"></i><button class="active" data-view="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="8" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="12" width="7" height="9" rx="2"/><rect x="3" y="15" width="7" height="6" rx="2"/></svg><span>Home</span></button><button data-view="syllabus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"/><path d="M8.5 8h7M8.5 12h5"/></svg><span>Syllabus</span></button><button data-view="study"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Study</span></button><button data-view="tests"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4V3h6v1M8.5 13l2.2 2.2 4.3-4.6"/></svg><span>Tests</span></button><button type="button" id="mobileMoreBtn" aria-expanded="false" aria-controls="mobileMoreMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>More</span></button></nav>
+<div class="msheet" id="mobileMoreMenu" hidden><div class="msheet-panel"><i class="grab"></i><div class="msheet-title">More</div><div class="msheet-grid"><button data-view="study"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><strong>Study sessions</strong><small>Log time &amp; questions</small></button><button data-view="mistakes"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4m0 4h.01"/><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/></svg></span><strong>Mistake bank</strong><small>Fix weak areas</small></button><button data-view="insights"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 6-7"/></svg></span><strong>Progress</strong><small>Streaks &amp; trends</small></button><button data-view="settings"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="m19.4 15 .1.1 1.4 1.1-1.4 2.4-1.7-.6a7.8 7.8 0 0 1-1.5.9l-.3 1.8h-2.8l-.3-1.8a7.8 7.8 0 0 1-1.5-.9l-1.7.6-1.4-2.4 1.4-1.1a7 7 0 0 1 0-1.8l-1.4-1.1 1.4-2.4 1.7.6a7.8 7.8 0 0 1 1.5-.9l.3-1.8h2.8l.3 1.8a7.8 7.8 0 0 1 1.5.9l1.7-.6 1.4 2.4-1.4 1.1a7 7 0 0 1 0 1.8Z"/></svg></span><strong>Settings</strong><small>Theme, sound &amp; backup</small></button></div></div></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Main navigation"><i class="ind"></i><button class="active" data-view="dashboard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="8" rx="2"/><rect x="14" y="3" width="7" height="5" rx="2"/><rect x="14" y="12" width="7" height="9" rx="2"/><rect x="3" y="15" width="7" height="6" rx="2"/></svg><span>Home</span></button><button data-view="syllabus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"/><path d="M8.5 8h7M8.5 12h5"/></svg><span>Syllabus</span></button><button data-view="train"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><span>Practice</span></button><button data-view="tests"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="4" width="14" height="17" rx="2.5"/><path d="M9 4V3h6v1M8.5 13l2.2 2.2 4.3-4.6"/></svg><span>Tests</span></button><button type="button" id="mobileMoreBtn" aria-expanded="false" aria-controls="mobileMoreMenu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>More</span></button></nav>
 <div id="tb"><span id="tbt"></span></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+window.psIcon=function(n){var P={flame:'<path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3.2 2-4 .2 1.2.8 2 1.6 2.4C10.2 9 10.5 5.5 12 3Z"/>',pen:'<path d="M4 20h4L19 9a2.1 2.1 0 0 0-3-3L5 17z"/><path d="m14 7 3 3"/>',target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/>',warn:'<path d="M12 9v4m0 4h.01"/><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/>',bolt:'<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>',trophy:'<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/>',ok:'<circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16 9.5"/>',check:'<path d="m5 12.5 4.5 4.5L19 7.5"/>',x:'<path d="M6 6l12 12M18 6 6 18"/>'};return '<svg class="pi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(P[n]||'')+'</svg>'};
+</script>
 <script>
 /* FX — haptics, sound and confirmation dialogs (settings saved separately under 'ps-fx') */
 const FX=(function(){
@@ -1002,7 +1005,7 @@ function renderDashboard(){
  const plan=pInfo.before?[]:planForDay(pInfo,due.length);
  const dnames=['SUN','MON','TUE','WED','THU','FRI','SAT'];
  document.getElementById('todayLabel').textContent=pInfo.before?'STARTS '+pInfo.start.toLocaleDateString('en-US',{month:'short',day:'numeric'}).toUpperCase():'WEEK '+pInfo.week+' · '+dnames[pInfo.dow]+', '+new Date().toLocaleDateString('en-US',{month:'short',day:'numeric'}).toUpperCase();
- const emptyHtml='<div class="empty">Study plan '+pInfo.start?.toLocaleDateString('en-GB',{day:'numeric',month:'long'})+' se shuru hoga. Tab tak textbook aur PYQ ready rakho. Start date Settings me badal sakte ho.</div>';
+ const emptyHtml='<div class="empty">Your study plan starts on '+pInfo.start?.toLocaleDateString('en-GB',{day:'numeric',month:'long'})+'. Until then, keep your textbook and PYQs ready. You can change the start date in Settings.</div>';
  document.getElementById('todayTasks').innerHTML=!plan.length?emptyHtml:plan.map((t,i)=>{const k=today()+'-'+(EXAM==='mts'?'m':'')+i;return `<label class="task ${state.tasks[k]?'done':''}" style="margin:0"><input class="task-check" type="checkbox" data-task="${k}" ${state.tasks[k]?'checked':''}><span class="task-text"><strong>${esc(t[0])}</strong><small>${esc(t[1])}</small></span><span class="pill">${t[2]}</span></label>`}).join('');
  const days=[];const start=new Date();start.setDate(start.getDate()-13);const logged=new Set(state.sessions.map(x=>x.date));for(let i=0;i<14;i++){const d=new Date(start);d.setDate(start.getDate()+i);const key=dateKey(d);days.push(`<div class="day ${key===today()?'today':''} ${logged.has(key)?'logged':''}" title="${key}">${d.getDate()}</div>`)}
  document.getElementById('miniCalendar').innerHTML=['S','M','T','W','T','F','S'].map(x=>`<div class="dayname">${x}</div>`).join('')+days.join('');
@@ -1042,7 +1045,7 @@ function populateTopicSelect(id,subject){const el=document.getElementById(id);co
 function renderStudy(){
  const todaySessions=state.sessions.filter(x=>x.date===today()),h=todaySessions.reduce((a,x)=>a+Number(x.hours||0),0),target=Number(state.prefs.targetHours||5),pct=Math.min(100,h/target*100);
  document.getElementById('todayHours').textContent=fmt(h)+'h';document.getElementById('hoursRing').style.strokeDashoffset=295.3-(295.3*pct/100);document.getElementById('todaySessions').textContent=todaySessions.length?todaySessions.length+' session'+(todaySessions.length>1?'s':'')+' logged':'No sessions yet';document.getElementById('todayEncouragement').textContent=h>=target?'Daily target reached. Great consistency.':`${fmt(Math.max(0,target-h))} focused hours to reach today’s target.`;
- const recent=state.sessions.slice().reverse().slice(0,5);document.getElementById('recentSessions').innerHTML=recent.length?recent.map(x=>`<div class="task"><div class="task-text"><strong>${esc(x.topic)}</strong><small>${esc(x.subject)} · ${esc(x.date)} · ${esc(x.activity)}</small></div><span class="pill purple">${fmt(x.hours)}h</span></div>`).join(''):'<div class="empty">Your first study session will appear here.</div>';
+ const recent=state.sessions.map((x,i)=>[x,i]).sort((a,b)=>(b[0].date||'').localeCompare(a[0].date||'')||b[1]-a[1]).slice(0,5).map(p=>p[0]);document.getElementById('recentSessions').innerHTML=recent.length?'<div class="task-list">'+recent.map(x=>`<div class="task"><div class="task-text"><strong>${esc(x.topic)}</strong><small>${esc(x.subject)} · ${esc(x.date)} · ${esc(x.activity)}</small></div><span class="pill purple">${fmt(x.hours)}h</span></div>`).join('')+'</div>':'<div class="empty">Your first study session will appear here.</div>';
 }
 function renderTests(){
  document.getElementById('testCount').textContent=state.tests.length;const attempts=state.tests.reduce((a,x)=>a+Number(x.attempted||0),0),correct=state.tests.reduce((a,x)=>a+Number(x.correct||0),0),scores=state.tests.filter(x=>x.score!==null&&x.score!==undefined).map(x=>Number(x.score));
@@ -1053,11 +1056,11 @@ function renderTests(){
  if(!state.tests.length){insight='<div class="empty">No test data yet. Start with one short diagnostic sectional test, then log the score and accuracy here. Don’t worry about the score—use it to choose what to study.</div>'}
  else {
    const full=state.tests.filter(t=>t.type==='Full Mock'&&t.score!==null&&t.score!==undefined).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0,3);
-   const fullLine=full.length?`Latest ${full.length} full mock${full.length===1?'':'s'} average: <strong>${fmt(full.reduce((n,t)=>n+Number(t.score||0),0)/full.length,1)} marks</strong>.`:'No full mock logged yet; keep building with sectionals before increasing mock frequency.';
+   const fullLine=full.length?`Latest ${full.length} full mock${full.length===1?'':'s'} average: <strong>${fmt(full.reduce((n,t)=>n+Number(t.score||0),0)/full.length,1)} marks</strong>`:'No full mock logged yet; keep building with sectionals before increasing mock frequency.';
    insight=`<div class="task-list"><div class="task"><span class="stat-icon">01</span><div class="task-text"><strong>${weak?`Priority subject: ${esc(weak.subject)}`:'Build a baseline'}</strong><small>${weak?`Average accuracy across the latest ${weak.count} logged sectional test${weak.count===1?'':'s'}: ${Math.round(weak.accuracy)}%. ${weak.accuracy<70?'Rebuild concepts, then solve untimed questions.':weak.accuracy<85?'Practise mixed PYQs and track time.':'Maintain accuracy and increase speed gradually.'}`:'Log subject-wise sectional tests to identify your weakest area.'}</small></div></div><div class="task"><span class="stat-icon">02</span><div class="task-text"><strong>${topic?`Next chapter: ${esc(topic.topic)}`:'Syllabus nearly complete'}</strong><small>${topic?esc(topic.next):'Revise completed chapters and keep reviewing mistakes.'}</small></div></div><div class="task"><span class="stat-icon">03</span><div class="task-text"><strong>Full mock trend</strong><small>${fullLine}</small></div></div></div>`;
  }
  document.getElementById('testInsights').innerHTML=insight;
- const list=state.tests.slice().reverse();document.getElementById('testHistory').innerHTML=list.length?`<div class="table-wrap"><table><thead><tr><th>Date / Test</th><th>Type</th><th>Accuracy</th><th>Score</th><th></th></tr></thead><tbody>${list.map(x=>`<tr><td><strong>${esc(x.name)}</strong><br><span class="muted">${esc(x.date)} · ${esc(x.subject)}${x.source?' · '+esc(x.source):''}</span></td><td>${esc(x.type)}</td><td>${x.attempted?Math.round(x.correct/x.attempted*100)+'%':'—'}</td><td>${x.score===null?'—':fmt(x.score,1)}</td><td><button class="linkbtn" data-delete-test="${x.id}">Delete</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">No tests logged yet. Add your first sectional or full mock.</div>';
+ const list=state.tests.slice().reverse();document.getElementById('testHistory').innerHTML=list.length?`<div class="task-list">${list.map(x=>{const a=x.attempted?Math.round(x.correct/x.attempted*100):null;return `<div class="task"><div class="task-text"><strong>${esc(x.name)}</strong><small>${esc(x.date)} · ${esc(x.subject)} · ${esc(x.type)}${x.source?' · '+esc(x.source):''}</small></div><span class="pill ${a===null?'':a>=75?'green':a>=50?'amber':'rose'}">${a===null?'—':a+'%'}</span><span class="pill purple">${x.score==null?'—':fmt(x.score,1)}</span><button class="linkbtn" data-delete-test="${x.id}">Delete</button></div>`}).join('')}</div>`:'<div class="empty">No tests logged yet. Add your first sectional or full mock.</div>';
  document.querySelectorAll('[data-delete-test]').forEach(b=>b.onclick=async()=>{const t=state.tests.find(x=>x.id===b.dataset.deleteTest);if(await FX.confirm({title:'Delete this test?',message:'“'+(t?.name||'This test')+'” will be removed from your history.',confirmText:'Delete test',danger:true})){state.tests=state.tests.filter(x=>x.id!==b.dataset.deleteTest);save();toast('Test deleted','warn')}});
 }
 function dueReview(m,days){const d=new Date((m.date||today())+'T12:00:00');d.setDate(d.getDate()+days);return dateKey(d)}
@@ -1067,22 +1070,22 @@ function renderMistakes(){
  const due=open.filter(m=>[1,3,7].some(d=>dueReview(m,d)<=today()&&!m.reviews?.[d]));document.getElementById('revisionCount').textContent=due.length+' due';document.getElementById('revisionQueue').innerHTML=due.length?due.map(m=>`<div class="task rq"><div class="task-text"><strong>${esc(m.topic)}</strong><small>${esc(m.subject)} · ${esc(m.type)} · logged ${esc(mDate(m.date))}</small><div class="rq-detail"><b>Mistake:</b> ${esc(m.problem)}</div><div class="rq-detail"><b>Fix:</b> ${esc(m.fix)}</div></div><button class="btn soft" data-review="${m.id}">Review</button></div>`).join(''):'<div class="empty">No reviews due today. Log mistakes after practice to build your queue.</div>';
  document.querySelectorAll('[data-review]').forEach(b=>b.onclick=()=>{const m=state.mistakes.find(x=>x.id===b.dataset.review);const due=[1,3,7].find(d=>dueReview(m,d)<=today()&&!m.reviews?.[d]);if(due){m.reviews=m.reviews||{};m.reviews[due]=true;if([1,3,7].every(d=>m.reviews[d]))m.mastered=true;save();toast('Revision marked complete')}})
  const all=state.mistakes.slice().reverse().sort((a,b)=>(a.mastered?1:0)-(b.mastered?1:0));document.getElementById('mistakeTable').innerHTML=all.length?`<div class="mgrid">${all.map(m=>{const n=[1,3,7].filter(d=>m.reviews?.[d]).length,marks=Number(m.marks||0);return `<article class="mcard ${m.mastered?'mastered':''}"><header class="mc-head"><div><strong>${esc(m.topic)}</strong><span>${esc(m.subject)} · ${esc(mDate(m.date))}</span></div><span class="pill rose">${esc(m.type)}</span></header><div class="mc-chips"><span class="chip ${m.mastered?'ok':'warn'}">${m.mastered?'✓ Mastered':'Needs review'}</span><span class="chip">${n}/3 reviews</span>${marks>0?`<span class="chip bad">−${esc(marks)} marks</span>`:''}</div><div class="mc-block"><small>What went wrong</small><p>${esc(m.problem)}</p></div><div class="mc-block fix"><small>Correct concept / fix</small><p>${esc(m.fix)}</p></div>${m.next?`<div class="mc-block next"><small>Next action</small><p>${esc(m.next)}</p></div>`:''}<footer class="mc-foot"><div class="mc-reviews">${[1,3,7].map(d=>{const dd=dueReview(m,d),ov=!m.reviews?.[d]&&dd<=today()&&!m.mastered;return `<label class="rv ${m.reviews?.[d]?'done':''} ${ov?'due':''}"><input type="checkbox" data-mreview="${m.id}" data-day="${d}" ${m.reviews?.[d]?'checked':''}><span><b>${d}d</b><em>${m.reviews?.[d]?'done':ov?'due now':esc(mDate(dd,true))}</em></span></label>`}).join('')}</div><button class="btn soft mc-master" data-master="${m.id}">${m.mastered?'↺ Move back to review':'Mark mastered ✓'}</button></footer></article>`}).join('')}</div>`:'<div class="empty">Your mistake bank is empty. Add mistakes from practice or mock analysis.</div>';
- document.querySelectorAll('[data-mreview]').forEach(el=>el.onchange=()=>{const m=state.mistakes.find(x=>x.id===el.dataset.mreview);m.reviews=m.reviews||{};m.reviews[el.dataset.day]=el.checked;save()});
+ document.querySelectorAll('[data-mreview]').forEach(el=>el.onchange=()=>{const m=state.mistakes.find(x=>x.id===el.dataset.mreview);m.reviews=m.reviews||{};m.reviews[el.dataset.day]=el.checked;if([1,3,7].every(d=>m.reviews[d]))m.mastered=true;else if(!el.checked)m.mastered=false;save()});
  document.querySelectorAll('[data-master]').forEach(b=>b.onclick=()=>{const m=state.mistakes.find(x=>x.id===b.dataset.master);m.mastered=!m.mastered;save();toast(m.mastered?'Marked mastered':'Moved back to review')});
 }
 function renderWeakZones(){const el=document.getElementById('weakZoneList');if(!el)return;const list=getWeakZoneCandidates().slice(0,8);el.innerHTML=list.length?`<div class="weak-zone-list">${list.map(t=>`<div class="weak-zone-row"><div class="weak-zone-main"><strong>${esc(t.topic)}</strong><small>${esc(subjectName(t.subject))} · ${esc(t.reason)}${t.stats.questions?` · ${Math.round(t.stats.accuracy)}% from ${t.stats.questions} logged questions`:''}</small></div><div class="weak-zone-actions"><button class="btn soft" data-wz-practice="${t.id}">Practise</button><button class="linkbtn" data-wz-unflag="${t.id}">${t.flagged?'Unflag':'Keep in focus'}</button></div></div>`).join('')}</div>`:'<div class="empty">No weak chapters identified yet. Flag a chapter from Syllabus, or log practice and mistakes so the tracker can spot patterns.</div>';el.querySelectorAll('[data-wz-practice]').forEach(b=>b.onclick=()=>{const t=TOPICS.find(x=>x.id===b.dataset.wzPractice);go('study');document.getElementById('studySubject').value=t.subject;populateTopicSelect('studyTopic',t.subject);document.getElementById('studyTopic').value=t.topic;document.querySelector('#studyForm [name="date"]').value=today()});el.querySelectorAll('[data-wz-unflag]').forEach(b=>b.onclick=()=>{const id=b.dataset.wzUnflag;if(state.weakTopics[id])delete state.weakTopics[id];else state.weakTopics[id]=true;save();toast('Weak Zone updated')})}
 function renderInsights(){
  const days=new Set(state.sessions.map(x=>x.date)).size,hours=state.sessions.reduce((a,x)=>a+Number(x.hours||0),0);
- document.getElementById('studyDays').textContent=days;document.getElementById('avgSession').textContent=state.sessions.length?fmt(hours/state.sessions.length)+'h':'—';document.getElementById('topicsLearning').textContent=TOPICS.filter(t=>getStatus(t)==='Learning').length;document.getElementById('mistakesOpen').textContent=state.mistakes.filter(m=>!m.mastered).length;
+ document.getElementById('studyDays').textContent=days;document.getElementById('avgSession').textContent=state.sessions.length?fmt(hours/state.sessions.length)+'h':'—';document.getElementById('topicsLearning').textContent=TOPICS.filter(t=>getStatus(t)==='Learning'||state.weakTopics[t.id]).length;document.getElementById('mistakesOpen').textContent=state.mistakes.filter(m=>!m.mastered).length;
  document.getElementById('insightSubjects').innerHTML=EXAMS[EXAM].subs.map(s=>{const a=TOPICS.filter(t=>t.subject===s),done=a.filter(t=>['Done','Revised'].includes(getStatus(t))).length,learning=a.filter(t=>getStatus(t)==='Learning').length;return `<div style="margin-bottom:18px"><div class="section-head" style="margin-bottom:8px"><strong style="font-size:12px">${subjectName(s)}</strong><span class="muted" style="font-size:10px">${done}/${a.length} complete · ${learning} learning</span></div><div class="bar"><span style="width:${done/a.length*100}%"></span></div></div>`}).join('');renderWeakZones();
 }
 function renderReadinessSummary(){const rc=readinessCounts(),el=document.getElementById('readinessSummary');if(el)el.innerHTML=`<div class="readiness-head"><div><strong>Chapter readiness checklist</strong><small>Basics → your notes → basic questions → PYQs → analysis → revision</small></div><span class="pill purple">${rc.pct}% ready</span></div><div class="bar readiness-bar"><span style="width:${rc.pct}%"></span></div><small class="muted">${rc.done} of ${rc.total} checkpoints complete. Mark a step only when you have actually done it.</small>`}
 function saveLite(){try{localStorage.setItem(KEY,JSON.stringify(state));localStorage.setItem('prepspace_last_edit',new Date().toISOString())}catch(e){toast('Storage unavailable. Export a backup to keep your data safe.')}renderReadinessSummary();othersDirty=true;window.prepSpaceCloud?.queueSync()}
 function renderAll(skipTopics){renderDashboard();const sv=document.getElementById('view-syllabus');if(!skipTopics){if(sv&&sv.classList.contains('active')){renderTopics();topicsDirty=false}else topicsDirty=true}renderStudy();renderTests();renderMistakes();renderInsights();renderDataInfo();document.getElementById('statSyllabus').textContent=Math.round(progress())+'%'}
 const meta={dashboard:['YOUR PREPARATION, IN FOCUS','Good to see you.','Your SSC CHSL journey, organised one session at a time.'],syllabus:['LEARN WITH A CLEAR ORDER','Syllabus planner','Start with foundations. Build accuracy before speed.'],study:['SHOW UP, LOG IT, IMPROVE','Study sessions','Track focused time, question practice and your next action.'],tests:['MEASURE WHAT MATTERS','Test centre','Use every test to find the next weak chapter—not just a score.'],mistakes:['TURN ERRORS INTO MARKS','Mistake bank','Capture the why, write the fix, and review it on schedule.'],insights:['PROGRESS OVER PERFECTION','Progress & insights','Your effort, consistency and syllabus progress in one place.'],settings:['MAKE IT YOURS','Settings & backup','Targets, haptics & sound, appearance and your data in one place.']};
-function go(view){if(!meta[view])return;if(othersDirty){othersDirty=false;renderDashboard();renderStudy();renderTests();renderMistakes();renderInsights();renderDataInfo()}if(view==='syllabus'&&topicsDirty){topicsDirty=false;renderTopics()}document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+view));document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});const m=meta[view];document.getElementById('eyebrow').textContent=m[0];document.getElementById('pageTitle').textContent=m[1];document.getElementById('pageSub').textContent=m[2];const more=document.getElementById('mobileMoreMenu'),moreBtn=document.getElementById('mobileMoreBtn');if(more)more.hidden=true;if(moreBtn){moreBtn.setAttribute('aria-expanded','false');moreBtn.classList.toggle('active',view==='mistakes'||view==='insights'||view==='settings')}window.scrollTo({top:0,behavior:'smooth'});if(view==='study')renderStudy()}
+function go(view){if(!meta[view])return;if(othersDirty){othersDirty=false;renderDashboard();renderStudy();renderTests();renderMistakes();renderInsights();renderDataInfo()}if(view==='syllabus'&&topicsDirty){topicsDirty=false;renderTopics()}document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+view));document.querySelectorAll('[data-view]').forEach(b=>{const active=b.dataset.view===view;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});const m=meta[view];document.getElementById('eyebrow').textContent=m[0];document.getElementById('pageTitle').textContent=m[1];document.getElementById('pageSub').textContent=m[2];const more=document.getElementById('mobileMoreMenu'),moreBtn=document.getElementById('mobileMoreBtn');if(more)more.hidden=true;if(moreBtn){moreBtn.setAttribute('aria-expanded','false');moreBtn.classList.toggle('active',view==='study'||view==='mistakes'||view==='insights'||view==='settings')}window.scrollTo({top:0,behavior:'smooth'});if(view==='study')renderStudy()}
 document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.view)));
-const mobileMoreBtn=document.getElementById('mobileMoreBtn'),mobileMoreMenu=document.getElementById('mobileMoreMenu');if(mobileMoreBtn&&mobileMoreMenu){mobileMoreBtn.addEventListener('click',()=>{const open=mobileMoreMenu.hidden;mobileMoreMenu.hidden=!open;mobileMoreBtn.setAttribute('aria-expanded',String(open));});document.addEventListener('click',e=>{if(!mobileMoreMenu.hidden&&!mobileMoreMenu.contains(e.target)&&!mobileMoreBtn.contains(e.target)){mobileMoreMenu.hidden=true;mobileMoreBtn.setAttribute('aria-expanded','false')}})}
+const mobileMoreBtn=document.getElementById('mobileMoreBtn'),mobileMoreMenu=document.getElementById('mobileMoreMenu');if(mobileMoreBtn&&mobileMoreMenu){mobileMoreBtn.addEventListener('click',()=>{const open=mobileMoreMenu.hidden;mobileMoreMenu.hidden=!open;mobileMoreBtn.setAttribute('aria-expanded',String(open));});document.addEventListener('click',e=>{if(!mobileMoreMenu.hidden&&(e.target===mobileMoreMenu||!mobileMoreMenu.contains(e.target))&&!mobileMoreBtn.contains(e.target)){mobileMoreMenu.hidden=true;mobileMoreBtn.setAttribute('aria-expanded','false')}})}
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
 document.getElementById('quickAdd').onclick=()=>go('study');
 const topicSearchInput=document.getElementById('topicSearch'),clearTopicSearch=document.getElementById('clearTopicSearch');
@@ -1158,7 +1161,7 @@ function syncExamUI(){
   const ex=EXAMS[EXAM],mts=EXAM==='mts';
   document.querySelectorAll('[data-exam]').forEach(b=>b.setAttribute('aria-checked',String(b.dataset.exam===EXAM)));
   SLOT_NAMES[1]=mts?'Qualifying drill (Maths/Reasoning)':'Basic maths calculation';try{buildSlotRows()}catch(e){}
-  const ps=document.getElementById('planSub');if(ps)ps.textContent=mts?'MTS plan: GA + English pehle. MUST wale 3 kaam roz, baaki bonus.':'Your daily blueprint, one slot at a time.';
+  const ps=document.getElementById('planSub');if(ps)ps.textContent=mts?'MTS plan: GA + English first. Do the 3 MUST tasks every day; the rest is bonus.':'Your daily blueprint, one slot at a time.';
   const bs=document.getElementById('brandSub');if(bs)bs.textContent=ex.name+' workspace';
   document.title='PrepSpace — '+ex.name+' Journal';
   meta.dashboard[2]='Your '+ex.name+' journey, organised one session at a time.';
@@ -1279,12 +1282,12 @@ function ref(){return fb.fs.doc(fb.db,'users',user.uid)}
 
 function errText(e){
  var c=(e&&e.code)||'';
- if(c==='auth/unauthorized-domain')return 'Is website ka domain Firebase → Authentication → Settings → Authorized domains me add karo.';
- if(c==='auth/operation-not-allowed')return 'Firebase me Google sign-in enable karo (Authentication → Sign-in method).';
- if(c==='auth/network-request-failed')return 'Internet check karo.';
+ if(c==='auth/unauthorized-domain')return 'Add this website’s domain in Firebase → Authentication → Settings → Authorized domains.';
+ if(c==='auth/operation-not-allowed')return 'Enable Google sign-in in Firebase (Authentication → Sign-in method).';
+ if(c==='auth/network-request-failed')return 'Check your internet connection.';
  if(c==='auth/popup-closed-by-user'||c==='auth/cancelled-popup-request')return '';
- if(c==='permission-denied')return 'Firestore rules check karo (users/{uid} read/write allow hona chahiye).';
- return (c||e&&e.message||'Kuch gadbad hui');
+ if(c==='permission-denied')return 'Check your Firestore rules (users/{uid} must allow read and write).';
+ return (c||e&&e.message||'Something went wrong');
 }
 async function signIn(){
  var btn=document.getElementById('clGoogle');if(btn)btn.disabled=true;
@@ -1297,7 +1300,7 @@ async function signIn(){
 }
 async function signOut(){
  try{await fb.auth.signOut(fb.au)}catch(e){}
- stop();ldel('ps-cloud-ts');ldel('ps-cloud-uid');toast('Sign out ho gaya. Data is device par safe hai.');
+ stop();ldel('ps-cloud-ts');ldel('ps-cloud-uid');toast('Signed out. Your data is safe on this device.');
 }
 
 function stop(){if(unsub){try{unsub()}catch(e){}unsub=null}clearTimeout(pushT);pushT=null}
@@ -1310,18 +1313,18 @@ function start(){
 function queue(){
  clearTimeout(pushT);
  if(!user||!fb)return;
- if(!navigator.onLine){setStatus('Offline — internet aate hi sync hoga',true);return}
+ if(!navigator.onLine){setStatus('Offline. Will sync when you are back online',true);return}
  setStatus('Syncing…');pushT=setTimeout(push,1800);
 }
 async function push(){
  if(!user||!fb)return;
  clearTimeout(pushT);pushT=null;
- if(!navigator.onLine){setStatus('Offline — internet aate hi sync hoga',true);return}
+ if(!navigator.onLine){setStatus('Offline. Will sync when you are back online',true);return}
  var ts=Date.now();inflight=ts;setStatus('Syncing…');
  try{
   await fb.fs.setDoc(ref(),{data:JSON.stringify(state),updatedAt:ts,v:1,email:user.email||''});
   lset('ps-cloud-ts',String(ts));setStatus('Synced · '+hhmm());
- }catch(e){inflight=0;setStatus(errText(e)||'Sync fail hua, dobara try karo',true)}
+ }catch(e){inflight=0;setStatus(errText(e)||'Sync failed. Please try again',true)}
 }
 async function onSnap(snap){
  if(snap.metadata.hasPendingWrites)return;
@@ -1333,12 +1336,12 @@ async function onSnap(snap){
  var dirty=loc>last,first=last===0&&hasData(state);
  if(dirty||first){
   var o={};try{o=JSON.parse(d.data)}catch(e){}
-  var useCloud=await FX.confirm({title:'Cloud par data mila',message:'Is Google account me pehle se saved data hai. Kaunsa rakhna hai? Dusra replace ho jayega (safety copy bani rahegi).',details:['Cloud: '+summary(o),'Is device: '+summary(state)],confirmText:'Cloud wala lo',cancelText:'Is device wala rakho'});
+  var useCloud=await FX.confirm({title:'Cloud data found',message:'This Google account already has saved data. Which one do you want to keep? The other will be replaced (a safety copy is kept).',details:['Cloud: '+summary(o),'This device: '+summary(state)],confirmText:'Use cloud data',cancelText:'Keep this device'});
   if(useCloud)apply(d,cts);else{lset('ps-cloud-ts',String(cts));await push()}
  }else apply(d,cts);
 }
 function apply(d,cts){
- var o;try{o=JSON.parse(d.data)}catch(e){setStatus('Cloud data padh nahi paaye',true);return}
+ var o;try{o=JSON.parse(d.data)}catch(e){setStatus('Could not read cloud data',true);return}
  if(!o||typeof o!=='object')return;
  applying=true;
  try{if(typeof snapshotUndo==='function')snapshotUndo('Before cloud sync')}catch(e){}
@@ -1347,16 +1350,16 @@ function apply(d,cts){
  try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}
  lset('ps-cloud-ts',String(cts));lset('ps-local-ts',String(cts));
  try{var f=document.getElementById('settingsForm');f.elements.targetHours.value=state.prefs.targetHours;f.elements.targetQuestions.value=state.prefs.targetQuestions;if(f.elements.planStart)f.elements.planStart.value=planStartKey();buildSlotRows()}catch(e){}
- renderAll();applying=false;setStatus('Synced · '+hhmm());toast('Cloud se data sync ho gaya');
+ renderAll();applying=false;setStatus('Synced · '+hhmm());toast('Synced from the cloud');
 }
 
 function view(){
  if(!body)return;
  if(!cfg){
-  body.innerHTML='<p class="cl-note">Sync ke liye ek free Firebase project chahiye. Setup ke baad uska config yahan paste karo (sirf ek baar).</p><div class="field"><label for="clCfg">Firebase config</label><textarea id="clCfg" rows="5" spellcheck="false" placeholder=\'{ apiKey: "...", authDomain: "...", projectId: "...", appId: "..." }\'></textarea></div><div class="form-actions"><button class="btn primary" id="clSave" type="button">Save config</button></div>';
-  document.getElementById('clSave').onclick=function(){var c=parseCfg(document.getElementById('clCfg').value);if(!c){toast('Config sahi nahi hai. apiKey, projectId aur appId chahiye.');return}lset('ps-firebase',JSON.stringify(c));cfg=c;boot();view()};
+  body.innerHTML='<p class="cl-note">Sync needs a free Firebase project. After setup, paste its config here (one time only).</p><div class="field"><label for="clCfg">Firebase config</label><textarea id="clCfg" rows="5" spellcheck="false" placeholder=\'{ apiKey: "...", authDomain: "...", projectId: "...", appId: "..." }\'></textarea></div><div class="form-actions"><button class="btn primary" id="clSave" type="button">Save config</button></div>';
+  document.getElementById('clSave').onclick=function(){var c=parseCfg(document.getElementById('clCfg').value);if(!c){toast('Invalid config. It needs apiKey, projectId and appId.');return}lset('ps-firebase',JSON.stringify(c));cfg=c;boot();view()};
  }else if(!user){
-  body.innerHTML='<p class="cl-note">Login karo to progress cloud par save hoga aur dusre phone ya laptop par bhi milega.</p><button class="g-btn" id="clGoogle" type="button">'+G+'<span>Continue with Google</span></button><div class="cl-status'+(msgErr?' err':'')+'" id="clStatus"'+(msg?'':' hidden')+'>'+esc(msg)+'</div>'+(FIREBASE_CONFIG?'':'<br><button class="cl-link" id="clReset" type="button">Firebase config badlo</button>');
+  body.innerHTML='<p class="cl-note">Sign in to save your progress to the cloud and use it on your other phone or laptop too.</p><button class="g-btn" id="clGoogle" type="button">'+G+'<span>Continue with Google</span></button><div class="cl-status'+(msgErr?' err':'')+'" id="clStatus"'+(msg?'':' hidden')+'>'+esc(msg)+'</div>'+(FIREBASE_CONFIG?'':'<br><button class="cl-link" id="clReset" type="button">Change Firebase config</button>');
   document.getElementById('clGoogle').onclick=signIn;
   var r=document.getElementById('clReset');if(r)r.onclick=function(){ldel('ps-firebase');cfg=null;fb=null;user=null;msg='';view()};
  }else{
@@ -1371,7 +1374,7 @@ async function boot(){
  try{
   var f=await init();
   f.auth.onAuthStateChanged(f.au,function(u){user=u;view();if(u)start();else stop()},function(e){setStatus(errText(e),true)});
- }catch(e){setStatus('Firebase load nahi hua (offline ya galat config)',true);view()}
+ }catch(e){setStatus('Could not load Firebase (offline or wrong config)',true);view()}
 }
 window.prepSpaceCloud={
  queueSync:function(){if(applying)return;lset('ps-local-ts',String(Date.now()));queue()},
@@ -1442,7 +1445,7 @@ if(ap&&pbox){
 }
 
 /* ---- every settings card becomes tap-to-expand ---- */
-const TONES={'Study preferences':['◎','amber'],'Haptics & sound':['◉','violet'],'Backup & data':['⇅','green'],'About this syllabus':['i','sky'],'Account & sync':['☁','sky'],'Exam':['✓','amber']};
+const TONES={'Study preferences':['◎','amber'],'Haptics & sound':['◉','violet'],'Backup & data':['⇅','green'],'About this syllabus':['i','sky'],'Account & sync':['☁','sky'],'Exam':['✓','amber'],'Exam date':['◷','rose']};
 v.querySelectorAll('.card').forEach(c=>{
  const head=c.querySelector(':scope > .section-head');if(!head||c.classList.contains('acc'))return;
  c.classList.add('acc');
@@ -1539,4 +1542,623 @@ var t=v.querySelector('.theme-settings .theme-preview-icon');if(t&&!t.dataset.to
 v.querySelectorAll('.set-chips a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var el=document.querySelector(a.getAttribute('href'));if(el)el.scrollIntoView({behavior:'smooth',block:'start'})})});
 })();
 </script>
+<style id="ps-exam-boost">
+/* ===== Exam boost: countdown, chapter revision, flashcard drill ===== */
+/* ===== Home redesign ===== */
+#view-dashboard.active{display:flex;flex-direction:column;gap:14px}
+#view-dashboard .card{margin:0;border-radius:26px}
+.hd-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:14px;align-items:start}
+.hd-col{display:flex;flex-direction:column;gap:14px;min-width:0}
+@media(max-width:860px){.hd-grid{grid-template-columns:1fr}}
+#view-dashboard .section-head{margin-bottom:14px}
+#view-dashboard .section-head h2{font-size:16px;letter-spacing:-.01em}
+#view-dashboard .section-head p{font-size:12px;margin-top:2px}
+/* hero */
+#pxCountdown{position:relative;overflow:hidden;padding:0;border-radius:28px;background:radial-gradient(110% 100% at 100% 0%,rgba(var(--rgb),.26),transparent 58%),radial-gradient(80% 70% at 0% 100%,rgba(var(--rgb),.1),transparent 60%),linear-gradient(180deg,var(--c1),var(--card));border-color:color-mix(in srgb,var(--ac) 30%,var(--bd))}
+#pxCountdown:before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--rgb),.9),transparent);opacity:.7}
+.hh{padding:20px}
+.hh-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:16px}
+.hh-eye{font-size:10.5px;font-weight:800;letter-spacing:.18em;color:var(--at)}
+.hh-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:99px;font-size:11.5px;font-weight:800;white-space:nowrap;border:1px solid transparent}
+.hh-chip.ok{background:color-mix(in srgb,var(--g) 14%,transparent);color:var(--g);border-color:color-mix(in srgb,var(--g) 30%,transparent)}
+.hh-chip.bad{background:color-mix(in srgb,var(--r) 14%,transparent);color:var(--r);border-color:color-mix(in srgb,var(--r) 30%,transparent)}
+.hh-chip.info,.hh-chip.none{background:var(--gl);color:var(--at);border-color:color-mix(in srgb,var(--ac) 30%,transparent)}
+.hh-main{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.hh-days{min-width:0}
+.hh-days b{display:block;font-size:68px;line-height:.95;font-weight:800;letter-spacing:-.05em;background:var(--gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--at)}
+.hh-days span{display:block;margin-top:9px;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.hh-days p{margin:7px 0 0;font-size:13px;font-weight:600;color:var(--mu)}
+.hh-days.cta h3{margin:0 0 6px;font-size:22px;line-height:1.2;letter-spacing:-.02em}
+.hh-days.cta p{margin:0 0 14px;line-height:1.55}
+.hh-ring{position:relative;width:98px;height:98px;flex:none}
+.hh-ring svg{width:100%;height:100%;display:block;overflow:visible}
+.hh-ring .trk{fill:none;stroke:var(--c2);stroke-width:9}
+.hh-ring .arc{fill:none;stroke:url(#pxg);stroke-width:9;stroke-linecap:round;filter:drop-shadow(0 0 6px rgba(var(--rgb),.55));animation:pxRing 1.1s var(--ease) both}
+@keyframes pxRing{from{stroke-dashoffset:var(--full)}}
+.hh-ring-c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hh-ring-c b{font-size:21px;font-weight:800;letter-spacing:-.03em}
+.hh-ring-c small{font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}
+.hh-tl{margin-top:20px}
+.hh-track{position:relative;height:9px;border-radius:99px;background:var(--c2)}
+.hh-track .el{position:absolute;left:0;top:0;bottom:0;border-radius:99px;background:var(--gold);box-shadow:0 0 12px rgba(var(--rgb),.5)}
+.hh-track .bf{position:absolute;right:0;top:0;bottom:0;border-radius:0 99px 99px 0;background:repeating-linear-gradient(135deg,rgba(var(--rgb),.38) 0 4px,transparent 4px 8px)}
+.hh-track u{position:absolute;top:50%;width:15px;height:15px;border-radius:50%;background:var(--card);border:3px solid var(--ac2);transform:translate(-50%,-50%);box-shadow:0 0 0 4px rgba(var(--rgb),.18),0 0 14px rgba(var(--rgb),.7);text-decoration:none}
+.hh-tl-f{display:flex;justify-content:space-between;gap:8px;margin-top:9px;font-size:11px;font-weight:700;color:var(--mu)}
+.hh-mets{display:grid;grid-template-columns:repeat(3,1fr);margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}
+.hh-mets>div{text-align:center;position:relative}
+.hh-mets>div+div:before{content:"";position:absolute;left:0;top:10%;bottom:10%;width:1px;background:var(--bd)}
+.hh-mets b{display:block;font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.hh-mets .hot b{color:var(--at)}
+.hh-mets small{display:block;margin-top:3px;font-size:10.5px;font-weight:700;color:var(--mu)}
+.hh-msg{margin-top:14px;padding:12px 14px;border-radius:16px;font-size:12.5px;line-height:1.6;font-weight:600}
+.hh-msg.ok{background:color-mix(in srgb,var(--g) 12%,transparent);color:var(--g)}.hh-msg.bad{background:color-mix(in srgb,var(--r) 12%,transparent);color:var(--r)}.hh-msg.info{background:var(--gl);color:var(--at)}
+@media(max-width:420px){.hh{padding:18px 16px}.hh-days b{font-size:60px}.hh-ring{width:88px;height:88px}.hh-ring-c b{font-size:19px}}
+/* quick stats */
+.hd-stats{display:grid;grid-template-columns:repeat(3,1fr);padding:6px 4px!important}
+.hd-stat{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;padding:14px 6px;text-align:center}
+.hd-stat+.hd-stat:before{content:"";position:absolute;left:0;top:20%;bottom:20%;width:1px;background:var(--bd)}
+.hd-ico{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;margin-bottom:7px;color:#fff;box-shadow:0 8px 16px -8px rgba(0,0,0,.45)}
+.hd-ico svg{width:18px;height:18px}
+.hd-stat b{font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.hd-stat b span{color:var(--mu)!important;font-size:13px!important}
+.hd-stat small{font-size:11px;font-weight:700;color:var(--mu)}
+/* focus */
+#view-dashboard .focus-card{position:relative;overflow:hidden;padding:20px;background:radial-gradient(120% 120% at 100% 0%,rgba(var(--rgb),.3),transparent 60%),linear-gradient(180deg,var(--c1),var(--card));border-color:color-mix(in srgb,var(--ac) 38%,var(--bd))}
+#view-dashboard .focus-card .eyebrow{font-size:10.5px;font-weight:800;letter-spacing:.18em;color:var(--at)}
+#view-dashboard .focus-card h2{font-size:22px;line-height:1.25;letter-spacing:-.02em;margin:8px 0}
+#view-dashboard .focus-card p{font-size:13px;line-height:1.65;color:var(--mu);margin:0}
+#view-dashboard .focus-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+#view-dashboard .focus-card .btn{width:100%;margin-top:16px;background:var(--gold);color:var(--on);border:0;font-weight:800;box-shadow:0 14px 28px -14px rgba(var(--rgb),.9)}
+/* lists */
+#view-dashboard .task-list{display:grid;gap:8px}
+#view-dashboard .task{margin:0;padding:12px 14px;border-radius:18px;background:var(--c2);border:1px solid var(--bd)}
+#view-dashboard .task:last-child{border-bottom:1px solid var(--bd)}
+#subjectProgress{display:grid;gap:16px}
+#view-dashboard .subject-row{display:grid;grid-template-columns:1fr auto;gap:8px 10px;align-items:center}
+#view-dashboard .subject-name{display:flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;min-width:0}
+#view-dashboard .subject-name:before{content:"";width:9px;height:9px;border-radius:50%;flex:none;background:var(--sc,var(--ac));box-shadow:0 0 10px var(--sc,var(--ac))}
+#view-dashboard .subject-row .percent{font-size:12px;font-weight:800;color:var(--mu)}
+#view-dashboard .subject-row .bar{grid-column:1/-1;order:3;height:8px}
+#view-dashboard .subject-row .bar span{background:linear-gradient(90deg,var(--sc,var(--ac)),color-mix(in srgb,var(--sc,var(--ac)) 55%,#fff))}
+#subjectProgress>:nth-child(1){--sc:#f59e0b}#subjectProgress>:nth-child(2){--sc:#a78bfa}#subjectProgress>:nth-child(3){--sc:#34d399}#subjectProgress>:nth-child(4){--sc:#38bdf8}#subjectProgress>:nth-child(5){--sc:#fb7185}#subjectProgress>:nth-child(6){--sc:#94a3b8}
+#view-dashboard .mini-calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}
+#view-dashboard .dayname{text-align:center;font-size:10px;font-weight:800;color:var(--mu);letter-spacing:.06em}
+#view-dashboard .day{aspect-ratio:1;display:grid;place-items:center;border-radius:12px;background:var(--c2);font-size:12px;font-weight:700;color:var(--mu);border:1px solid transparent}
+#view-dashboard .day.logged{background:linear-gradient(135deg,var(--ac2),var(--ac));color:var(--on);box-shadow:0 6px 14px -6px rgba(var(--rgb),.8)}
+#view-dashboard .day.today{border-color:var(--ac);color:var(--at)}#view-dashboard .day.today.logged{color:var(--on);border-color:transparent;outline:2px solid var(--ac2);outline-offset:1px}
+.hd-leg{display:flex;gap:16px;margin-top:14px;font-size:11px;font-weight:700;color:var(--mu)}
+.hd-leg i{display:inline-block;width:10px;height:10px;border-radius:4px;margin-right:6px;vertical-align:-1px}
+.hd-leg .l{background:linear-gradient(135deg,var(--ac2),var(--ac))}.hd-leg .t{border:2px solid var(--ac)}
+html[data-amoled=on] #pxCountdown,html[data-amoled=on] #view-dashboard .focus-card{background:radial-gradient(120% 100% at 100% 0%,rgba(var(--rgb),.26),transparent 58%),#030304}
+html[data-amoled=on] #view-dashboard .hd-stats{background:#050507}
+@media(prefers-reduced-motion:reduce){.hh-ring .arc{animation:none}}
+/* settings: exam date */
+.pxs-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pxs-inp{flex:1;min-width:170px;min-height:46px;padding:10px 14px;border-radius:14px;border:1px solid var(--bd);background:var(--c2);color:var(--tx);font:inherit;font-size:15px;font-weight:700}
+.pxs-note{margin-top:12px;font-size:12.5px;line-height:1.6;color:var(--mu);padding:11px 13px;border-radius:14px;background:var(--gl);color:var(--at);font-weight:600}
+#pxRevision .task .btn{min-height:38px;padding:8px 14px;font-size:12.5px;font-weight:800;flex:none}
+#pxRevision .task-text small{font-size:11.5px}
+.px-late{color:var(--r);font-weight:700}
+.px-more{margin:10px 2px 0;font-size:12px;color:var(--mu)}
+#pxDrillCard{margin-bottom:16px}
+.px-drill-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.px-drill-row p{margin:4px 0 0;font-size:12.5px;color:var(--mu)}
+#pxDrill{position:fixed;inset:0;z-index:10050;background:var(--bg);color:var(--tx);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);overflow-y:auto;overscroll-behavior:contain}
+.pxd-top{display:flex;align-items:center;gap:12px;max-width:640px;width:100%;margin:0 auto 14px}
+.pxd-top .bar{flex:1}
+.pxd-x{width:40px;height:40px;border-radius:50%;border:1px solid var(--bd);background:var(--c1);color:var(--tx);font-size:18px;cursor:pointer}
+.pxd-count{font-size:12px;font-weight:800;color:var(--mu);min-width:44px;text-align:right}
+.pxd-card{max-width:640px;width:100%;margin:0 auto;flex:1;display:flex;flex-direction:column;gap:14px}
+.pxd-face{padding:20px;border-radius:24px;background:linear-gradient(180deg,var(--c1),var(--card));border:1px solid var(--bd);box-shadow:inset 0 1px 0 var(--hl),var(--sh)}
+.pxd-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.pxd-lab{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--at);margin-bottom:6px}
+.pxd-text{font-size:16px;line-height:1.65;white-space:pre-wrap;word-break:break-word}
+.pxd-ans{margin-top:16px;padding-top:16px;border-top:1px dashed var(--bd)}
+.pxd-ans .pxd-text{color:var(--g);font-weight:600}
+.pxd-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto;padding-top:8px}
+.pxd-actions .btn{min-height:52px;font-size:15px;font-weight:800;justify-content:center}
+.pxd-actions .full{grid-column:1/-1}
+.pxd-miss{background:color-mix(in srgb,var(--r) 14%,transparent)!important;color:var(--r)!important;border-color:transparent!important}
+.pxd-ok{background:color-mix(in srgb,var(--g) 16%,transparent)!important;color:var(--g)!important;border-color:transparent!important}
+.pxd-sum{text-align:center;padding:30px 16px}
+.pxd-sum b{display:block;font-size:46px;font-weight:800;color:var(--at);letter-spacing:-.03em}
+html[data-amoled=on] #pxDrill{background:#000}
+html[data-amoled=on] .pxd-face{box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 0 26px -16px rgba(var(--rgb),.85)}
+</style>
+<script id="ps-exam-boost-js">
+(function(){
+var STEPS=[1,3,7,21],DONE=['Done','Revised'];
+var cache={},drill=null;
+function $(i){return document.getElementById(i)}
+function ext(){var e=state.ext;if(!e||typeof e!=='object'||Array.isArray(e))e=state.ext={};
+ ['examDate','doneAt','rev','legacy','init','start','drill'].forEach(function(k){if(!e[k]||typeof e[k]!=='object'||Array.isArray(e[k]))e[k]={}});return e}
+function quiet(){try{localStorage.setItem(KEY,JSON.stringify(state));localStorage.setItem('prepspace_last_edit',new Date().toISOString())}catch(x){}try{window.prepSpaceCloud&&window.prepSpaceCloud.queueSync()}catch(x){}}
+function addDays(k,n){var d=new Date(k+'T12:00:00');d.setDate(d.getDate()+n);return dateKey(d)}
+function diff(a,b){return Math.round((new Date(b+'T12:00:00')-new Date(a+'T12:00:00'))/864e5)}
+function isDone(t){return DONE.indexOf(getStatus(t))>-1}
+function dshort(k){return mDate(k,true)}
+/* keep doneAt in sync with chapter status */
+function sync(){var e=ext(),T=today(),first=!e.init[EXAM],ch=false;
+ if(!e.start[EXAM]){e.start[EXAM]=T;ch=true}
+ TOPICS.forEach(function(t){var d=isDone(t);
+  if(d&&!e.doneAt[t.id]){e.doneAt[t.id]=T;if(first)e.legacy[t.id]=true;ch=true}
+  else if(!d&&e.doneAt[t.id]){delete e.doneAt[t.id];delete e.rev[t.id];delete e.legacy[t.id];ch=true}});
+ if(first){e.init[EXAM]=true;ch=true}
+ if(ch)quiet();return e}
+/* ---- chapter revision ---- */
+function revItems(e){var T=today(),out=[],up=null;
+ TOPICS.forEach(function(t){if(!isDone(t))return;var r=e.rev[t.id]||{},base=e.doneAt[t.id];if(!base)return;
+  var step=STEPS.find(function(d){return !r[d]});if(!step)return;
+  var due=addDays(base,step);if(r.last&&addDays(r.last,1)>due)due=addDays(r.last,1);
+  if(due<=T)out.push({t:t,step:step,n:STEPS.indexOf(step)+1,late:diff(due,T),due:due});
+  else if(!up||due<up.due)up={t:t,step:step,due:due}});
+ out.sort(function(a,b){return b.late-a.late});return {due:out,up:up}}
+function renderRevision(e){var el=$('pxRevision');if(!el)return;var r=revItems(e),list=r.due.slice(0,3),h;
+ h='<div class="section-head"><div><h2>Today’s revision</h2><p>Review each chapter 1, 3, 7 and 21 days after you finish it.</p></div><span class="pill '+(r.due.length?'amber':'green')+'">'+r.due.length+' due</span></div>';
+ if(list.length){h+='<div class="task-list">'+list.map(function(x){return '<div class="task"><div class="task-text"><strong>'+esc(x.t.topic)+'</strong><small>'+esc(subjectName(x.t.subject))+' · Revision '+x.n+'/4 (Day '+x.step+')'+(x.late>0?' · <span class="px-late">'+x.late+' days late</span>':' · today')+'</small></div><button class="btn soft" data-px-rev="'+esc(x.t.id)+'|'+x.step+'">Revised ✓</button></div>'}).join('')+'</div>';
+  if(r.due.length>3)h+='<div class="px-more">+'+(r.due.length-3)+' more revisions due. Finish these 3 first.</div>'}
+ else h+='<div class="empty">'+(r.up?'Nothing due today '+psIcon('ok')+'<br>Next: <b>'+esc(r.up.t.topic)+'</b> · '+esc(dshort(r.up.due)):'Mark a chapter as <b>Done</b> and its revision schedule is created automatically.')+'</div>';
+ setHTML('pxRevision',h)}
+/* ---- countdown + pace ---- */
+function renderCountdown(e){var T=today(),ed=e.examDate[EXAM]||'',total=TOPICS.length,done=TOPICS.filter(isDone).length,rem=total-done,pct=total?Math.round(done/total*100):0;
+ var name=(EXAMS[EXAM]&&EXAMS[EXAM].short)||'Exam',left=ed?diff(T,ed):null,R=44,C=2*Math.PI*R,off=(C*(1-pct/100)).toFixed(1);
+ var chip='<span class="hh-chip none">No date set</span>',msg='',mid='',tl='',mets='';
+ if(!ed){mid='<div class="hh-days cta"><h3>Set your exam date</h3><p>Add a date and your daily target and pace will show up here.</p><button type="button" class="btn primary" data-px-gosettings>Set it in Settings</button></div>'}
+ else if(left>0){var buf=left>14?Math.max(7,Math.round(left*.2)):0,sd=Math.max(1,left-buf),need=rem/sd;
+  var st=e.start[EXAM]||T,span=Math.max(1,diff(st,ed)),el=Math.min(span,Math.max(0,diff(st,T))),elp=(el/span*100).toFixed(1),bfp=(buf/span*100).toFixed(1);
+  var since=diff(st,T),win=Math.min(14,Math.max(1,since+1)),recent=0,cut=addDays(T,-13);
+  TOPICS.forEach(function(t){var d=e.doneAt[t.id];if(d&&!e.legacy[t.id]&&d>=cut)recent++});var act=recent/win;
+  mid='<div class="hh-days"><b>'+left+'</b><span>days left</span><p>'+esc(name)+' · '+esc(mDate(ed))+'</p></div>';
+  tl='<div class="hh-tl"><div class="hh-track"><i class="el" style="width:'+elp+'%"></i><i class="bf" style="width:'+bfp+'%"></i><u style="left:'+elp+'%"></u></div><div class="hh-tl-f"><span>'+esc(dshort(st))+'</span><span>Today · '+el+' days in</span><span>'+esc(dshort(ed))+'</span></div></div>';
+  mets='<div class="hh-mets"><div><b>'+rem+'</b><small>chapters left</small></div><div class="hot"><b>'+(rem?need.toFixed(1):'0')+'</b><small>chapters / day</small></div><div><b>'+buf+'</b><small>days revision buffer</small></div></div>';
+  if(!rem){chip='<span class="hh-chip ok">● Syllabus complete</span>';msg='Syllabus complete! Focus on mocks and revision now.';}
+  else if(since<3){chip='<span class="hh-chip info">● Tracking started</span>';msg='Aim for ~'+need.toFixed(1)+' chapters a day (about '+Math.ceil(need*7)+' a week). Your pace will show here after 3 days.'}
+  else if(act>=need*.9){chip='<span class="hh-chip ok">● On track</span>';msg='Your pace is '+act.toFixed(1)+'/day against '+need.toFixed(1)+'/day needed. Keep it up.'}
+  else{chip='<span class="hh-chip bad">● Peeche ho</span>';msg='Your pace is '+act.toFixed(1)+'/day but you need '+need.toFixed(1)+'/day. Use the weekend to catch up.'}
+  msg='<div class="hh-msg '+(chip.indexOf('bad')>-1?'bad':chip.indexOf('ok')>-1?'ok':'info')+'">'+msg+'</div>'}
+ else{chip='<span class="hh-chip info">● '+(left===0?'Exam today':'Date passed')+'</span>';mid='<div class="hh-days"><b>'+(left===0?'0':'—')+'</b><span>'+(left===0?'exam today':'date passed')+'</span></div>';msg='<div class="hh-msg info">'+(left===0?'All the best! Stay calm and do your best.':'Set a new exam date in Settings.')+'</div>'}
+ var ring='<div class="hh-ring"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="pxg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--ac2)"/><stop offset="1" style="stop-color:var(--ac)"/></linearGradient></defs><circle class="trk" cx="50" cy="50" r="'+R+'"/><circle class="arc" cx="50" cy="50" r="'+R+'" style="--full:'+C.toFixed(1)+';stroke-dasharray:'+C.toFixed(1)+';stroke-dashoffset:'+off+'" transform="rotate(-90 50 50)"/></svg><div class="hh-ring-c"><b>'+pct+'%</b><small>syllabus</small></div></div>';
+ setHTML('pxCountdown','<div class="hh"><div class="hh-top"><span class="hh-eye">'+esc(name)+' · COUNTDOWN</span>'+chip+'</div><div class="hh-main">'+mid+ring+'</div>'+tl+mets+msg+'</div>')}
+function renderExamSetting(e){var inp=$('pxExamDate');if(!inp)return;var ed=e.examDate[EXAM]||'';if(document.activeElement!==inp&&inp.value!==ed)inp.value=ed;
+ var n=$('pxExamNote');if(!n)return;var name=(EXAMS[EXAM]&&EXAMS[EXAM].short)||'Exam',left=ed?diff(today(),ed):null;
+ var t=!ed?name+' exam date is not set yet.':left>0?name+' · '+mDate(ed)+' · '+left+' days left':left===0?'Exam day! All the best.':name+' exam date has passed. Set a new one.';if(n.textContent!==t)n.textContent=t}
+function renderStreak(){var el=$('hdStreak');if(!el)return;var set={};state.sessions.forEach(function(x){set[x.date]=1});var d=new Date(),n=0;if(!set[dateKey(d)])d.setDate(d.getDate()-1);while(set[dateKey(d)]){n++;d.setDate(d.getDate()-1)}
+ var t=n?n+'-day streak':'Start a streak';if(el.textContent!==t)el.textContent=t}
+/* ---- drill card ---- */
+function openMist(){return state.mistakes.filter(function(m){return !m.mastered})}
+function renderDrillCard(){var el=$('pxDrillCard');if(!el)return;var o=openMist(),due=o.filter(function(m){return [1,3,7].some(function(d){return dueReview(m,d)<=today()&&!(m.reviews&&m.reviews[d])})}).length;
+ setHTML('pxDrillCard','<div class="px-drill-row"><div><div class="section-head" style="margin:0"><div><h2>Flashcard drill</h2></div><span class="pill rose">Active recall</span></div><p>'+(o.length?o.length+' cards ready · '+due+' revisions due. Get a card right twice in a row to master it.':'No open mistakes yet. Log mistakes after practice and they will appear here.')+'</p></div><button class="btn primary" data-px-drill'+(o.length?'':' disabled')+'>Start drill</button></div>')}
+function setHTML(id,h){if(cache[id]===h)return;var el=$(id);if(!el)return;cache[id]=h;el.innerHTML=h}
+function render(){try{var e=sync();renderCountdown(e);renderRevision(e);renderDrillCard();renderExamSetting(e);renderStreak()}catch(x){console.warn('exam-boost',x)}}
+/* ---- drill session ---- */
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function startDrill(){var e=ext(),o=openMist();if(!o.length)return;
+ function isDue(m){return [1,3,7].some(function(d){return dueReview(m,d)<=today()&&!(m.reviews&&m.reviews[d])})}
+ var a=shuffle(o.filter(isDue)),b=shuffle(o.filter(function(m){return !isDue(m)}));
+ b.sort(function(x,y){return ((e.drill[x.id]||{}).streak||0)-((e.drill[y.id]||{}).streak||0)});
+ var q=a.concat(b).slice(0,15).map(function(m){return m.id});
+ drill={q:q,i:0,total:q.length,show:false,ok:0,miss:0,mastered:0,again:{}};drawDrill()}
+function cur(){return drill&&drill.q[drill.i]?state.mistakes.find(function(m){return m.id===drill.q[drill.i]}):null}
+function drawDrill(){var el=$('pxDrill');if(!el){el=document.createElement('div');el.id='pxDrill';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');document.body.appendChild(el)}
+ var h='<div class="pxd-top"><button class="pxd-x" data-px-close aria-label="Close">'+psIcon('x')+'</button><div class="bar"><span style="width:'+Math.min(100,drill.i/Math.max(1,drill.q.length)*100)+'%"></span></div><span class="pxd-count">'+Math.min(drill.i+1,drill.q.length)+'/'+drill.q.length+'</span></div>';
+ var m=cur();
+ if(!m){h+='<div class="pxd-card"><div class="pxd-face pxd-sum"><b>'+drill.ok+'/'+(drill.ok+drill.miss)+'</b><div class="pxd-lab" style="margin-top:8px">Correct</div><p style="color:var(--mu);line-height:1.6;margin:12px 0 0">'+(drill.mastered?psIcon('ok')+' '+drill.mastered+' mistakes mastered.':'Drill the missed ones again tomorrow.')+'</p></div><div class="pxd-actions"><button class="btn primary full" data-px-close>Done</button></div></div>'}
+ else{var s=(ext().drill[m.id]||{}).streak||0;
+  h+='<div class="pxd-card"><div class="pxd-face"><div class="pxd-chips"><span class="pill purple">'+esc(m.subject)+'</span><span class="pill">'+esc(m.topic)+'</span><span class="pill rose">'+esc(m.type)+'</span><span class="pill green">Streak '+s+'/2</span></div><div class="pxd-lab">Mistake / Question</div><div class="pxd-text">'+esc(m.problem)+'</div>';
+  if(drill.show)h+='<div class="pxd-ans"><div class="pxd-lab">Correct concept / fix</div><div class="pxd-text">'+esc(m.fix)+'</div>'+(m.next?'<div class="pxd-lab" style="margin-top:14px">Next action</div><div class="pxd-text" style="font-size:14px;color:var(--mu)">'+esc(m.next)+'</div>':'')+'</div>';
+  h+='</div><div class="pxd-actions">'+(drill.show?'<button class="btn pxd-miss" data-px-ans="0">'+psIcon('x')+' Missed it</button><button class="btn pxd-ok" data-px-ans="1">'+psIcon('check')+' Got it</button>':'<button class="btn primary full" data-px-show>Show answer</button>')+'</div></div>'}
+ el.innerHTML=h}
+function answer(ok){var m=cur();if(!m)return;var e=ext(),d=e.drill[m.id]||(e.drill[m.id]={streak:0,seen:0,missed:0});d.seen++;d.last=today();
+ if(ok){drill.ok++;d.streak++;if(d.streak>=2){m.mastered=true;drill.mastered++}}
+ else{drill.miss++;d.streak=0;d.missed++;if(!drill.again[m.id]){drill.again[m.id]=1;drill.q.push(m.id)}}
+ quiet();drill.i++;drill.show=false;drawDrill()}
+function closeDrill(){var el=$('pxDrill');if(el)el.remove();drill=null;save()}
+document.addEventListener('click',function(ev){var t=ev.target.closest&&ev.target.closest('[data-px-rev],[data-px-gosettings],[data-px-cleardate],[data-px-drill],[data-px-close],[data-px-show],[data-px-ans]');if(!t)return;
+ if(t.hasAttribute('data-px-rev')){var p=t.getAttribute('data-px-rev').split('|'),e=ext(),r=e.rev[p[0]]||(e.rev[p[0]]={});r[p[1]]=true;r.last=today();save();toast('Revision done ✓');}
+ else if(t.hasAttribute('data-px-gosettings')){go('settings');setTimeout(function(){var c=$('examDateCard');if(c){var h=c.querySelector('.acc-head');if(h&&!c.classList.contains('open'))h.click();c.scrollIntoView({behavior:'smooth',block:'center'})}},250)}
+ else if(t.hasAttribute('data-px-cleardate')){var e2=ext();delete e2.examDate[EXAM];save();toast('Exam date cleared')}
+ else if(t.hasAttribute('data-px-drill'))startDrill();
+ else if(t.hasAttribute('data-px-close'))closeDrill();
+ else if(t.hasAttribute('data-px-show')){drill.show=true;drawDrill()}
+ else if(t.hasAttribute('data-px-ans'))answer(t.getAttribute('data-px-ans')==='1')});
+document.addEventListener('change',function(ev){if(ev.target&&ev.target.id==='pxExamDate'){var e=ext();if(ev.target.value)e.examDate[EXAM]=ev.target.value;else delete e.examDate[EXAM];save();toast('Exam date saved')}});
+var _ra=renderAll;renderAll=function(){var r=_ra.apply(this,arguments);if(!drill)render();return r};
+render();
+})();
+</script>
+<style id="ps-tabs-v4">
+/* ===== Shared modern look for Syllabus / Study / Tests / Mistakes / Insights ===== */
+:is(#view-syllabus,#view-study,#view-tests,#view-mistakes,#view-insights).active{display:flex;flex-direction:column;gap:14px}
+:is(#view-syllabus,#view-study,#view-tests,#view-mistakes,#view-insights) .card{margin:0!important;border-radius:26px;padding:18px}
+:is(#view-syllabus,#view-study,#view-tests,#view-mistakes,#view-insights) .grid.split{gap:14px;align-items:start}
+:is(#view-study,#view-tests,#view-mistakes,#view-insights) .section-head{margin-bottom:14px}
+:is(#view-study,#view-tests,#view-mistakes,#view-insights) .section-head h2{font-size:16px;letter-spacing:-.01em}
+:is(#view-study,#view-tests,#view-mistakes,#view-insights) .section-head p{font-size:12px;margin-top:2px}
+/* stat tiles */
+:is(#view-tests,#view-insights) .grid.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:900px){:is(#view-tests,#view-insights) .grid.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+:is(#view-tests,#view-insights) .grid.stats>.card{position:relative;overflow:hidden;padding:16px!important;background:radial-gradient(120% 100% at 100% 0%,rgba(var(--rgb),.14),transparent 60%),linear-gradient(180deg,var(--c1),var(--card));border-color:var(--bd);box-shadow:inset 0 1px 0 var(--hl),var(--sh)}
+:is(#view-tests,#view-insights) .stat-top{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--at)}
+:is(#view-tests,#view-insights) .stat-value{margin-top:10px;font-size:30px;line-height:1.05;font-weight:800;letter-spacing:-.03em;background:var(--gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--at)}
+:is(#view-tests,#view-insights) .stat-value[style]{font-size:19px!important;line-height:1.2}
+:is(#view-tests,#view-insights) .stat-foot{margin-top:5px;font-size:11.5px;line-height:1.45;color:var(--mu)}
+/* list tiles */
+:is(#view-study,#view-tests,#view-mistakes,#view-insights) .task-list{display:grid;gap:8px}
+:is(#view-study,#view-tests,#view-mistakes,#view-insights) .task{margin:0;padding:12px 14px;border-radius:18px;background:var(--c2);border:1px solid var(--bd)}
+:is(#view-study,#view-tests,#view-mistakes,#view-insights) .task:last-child{border-bottom:1px solid var(--bd)}
+#view-insights .task .stat-icon{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;flex:none;font-size:12px;font-weight:800;background:var(--gold)!important;color:var(--on)!important;box-shadow:0 8px 16px -8px rgba(var(--rgb),.8)}
+/* forms */
+:is(#view-study,#view-tests,#view-mistakes) .form-grid{gap:14px}
+:is(#view-study,#view-tests,#view-mistakes) .form-actions{gap:10px;margin-top:20px}
+:is(#view-study,#view-tests,#view-mistakes) .form-actions .btn{flex:1;min-height:50px;font-weight:800}
+:is(#view-study,#view-tests,#view-mistakes) .form-actions .btn.primary{flex:2;background:var(--gold);color:var(--on);border:0;box-shadow:0 14px 28px -14px rgba(var(--rgb),.9)}
+/* study ring */
+#view-study .ring-row{gap:20px}
+#view-study .progress-ring{width:132px;height:132px}
+#hoursRing{filter:drop-shadow(0 0 7px rgba(var(--rgb),.6))}
+#view-study .ring-copy strong{font-size:17px}
+/* tables -> rounded rows */
+#view-tests .table-wrap{overflow-x:auto}
+#view-tests table{border-collapse:separate;border-spacing:0 8px;width:100%}
+#view-tests th{padding:0 12px 4px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);text-align:left;border:0}
+#view-tests td{padding:12px;background:var(--c2);border:0;font-size:13px}
+#view-tests td:first-child{border-radius:16px 0 0 16px}#view-tests td:last-child{border-radius:0 16px 16px 0}
+/* syllabus */
+#view-syllabus .toolbar{margin:0;gap:10px}
+#view-syllabus .search input{min-height:52px;border-radius:18px;font-size:15px}
+#view-syllabus .toolbar select{min-height:48px;border-radius:16px;font-weight:600}
+#view-syllabus .filters{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:8px;width:100%;padding:2px 2px 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+#view-syllabus .filters::-webkit-scrollbar{display:none}
+#view-syllabus .filter{flex:0 0 auto;padding:10px 16px;white-space:nowrap}
+#view-syllabus .readiness-summary{margin:0!important;padding:18px!important;border-radius:26px;background:radial-gradient(110% 100% at 100% 0%,rgba(var(--rgb),.22),transparent 60%),linear-gradient(180deg,var(--c1),var(--card));border-color:color-mix(in srgb,var(--ac) 30%,var(--bd))}
+#view-syllabus .readiness-bar{height:10px}
+#view-syllabus .topic{border-radius:26px;background:linear-gradient(180deg,var(--c1),var(--card))}
+/* mistakes */
+#pxDrillCard{background:radial-gradient(110% 100% at 100% 0%,rgba(var(--rgb),.2),transparent 60%),linear-gradient(180deg,var(--c1),var(--card));border-color:color-mix(in srgb,var(--ac) 30%,var(--bd))}
+#pxDrillCard .btn.primary{min-height:48px;padding-inline:24px}
+#view-mistakes .mcard{border-radius:24px}
+/* insights */
+#insightSubjects{display:grid;gap:18px}
+#insightSubjects>div{margin:0!important}
+#insightSubjects>div .bar{height:8px}
+#insightSubjects>div:nth-child(1){--sc:#f59e0b}#insightSubjects>div:nth-child(2){--sc:#a78bfa}#insightSubjects>div:nth-child(3){--sc:#34d399}#insightSubjects>div:nth-child(4){--sc:#38bdf8}#insightSubjects>div:nth-child(5){--sc:#fb7185}#insightSubjects>div:nth-child(6){--sc:#94a3b8}
+#insightSubjects>div .bar span{background:linear-gradient(90deg,var(--sc),color-mix(in srgb,var(--sc) 55%,#fff))}
+#insightSubjects>div strong:before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:9px;background:var(--sc);box-shadow:0 0 10px var(--sc)}
+#view-insights .weak-zone-row{padding:12px 14px;border-radius:18px;background:var(--c2);border:1px solid var(--bd)}
+html[data-amoled=on] :is(#view-syllabus,#view-study,#view-tests,#view-mistakes,#view-insights) .card{background:#050507;border-color:rgba(var(--rgb),.2)}
+html[data-amoled=on] #pxDrillCard,html[data-amoled=on] #view-syllabus .readiness-summary{background:radial-gradient(110% 100% at 100% 0%,rgba(var(--rgb),.22),transparent 60%),#030304}
+</style>
+<style id="ps-tabs-v5">
+/* ===== Home-style hero cards for Study / Tests / Mistakes / Insights / Syllabus ===== */
+:is(#view-study,#view-tests) .px5-hero{padding:0;position:relative;overflow:hidden;border-radius:28px;background:radial-gradient(110% 100% at 100% 0%,rgba(var(--rgb),.26),transparent 58%),radial-gradient(80% 70% at 0% 100%,rgba(var(--rgb),.1),transparent 60%),linear-gradient(180deg,var(--c1),var(--card));border-color:color-mix(in srgb,var(--ac) 30%,var(--bd))}
+.px5-hero:before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--rgb),.9),transparent);opacity:.7}
+.px5-hero .hh-days b{font-size:56px}
+.px5-spark{display:block;width:100%;height:70px;margin-top:16px;overflow:visible}
+.px5-bars{display:flex;gap:8px;height:104px;margin-top:18px}
+.px5-b{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:4px}
+.px5-b .v{height:13px;font-size:10px;font-weight:800;color:var(--mu)}
+.px5-b .w{flex:1;width:100%;display:flex;align-items:flex-end;justify-content:center}
+.px5-b i{display:block;width:100%;max-width:30px;border-radius:9px 9px 5px 5px;background:var(--c2)}
+.px5-b.has i{background:linear-gradient(180deg,var(--ac2),var(--ac));box-shadow:0 6px 14px -8px rgba(var(--rgb),.8)}
+.px5-b .l{font-size:10px;font-weight:800;color:var(--mu)}.px5-b.now .l,.px5-b.now .v{color:var(--at)}
+.px5-chips{display:flex;gap:8px;overflow-x:auto;margin:0 0 12px;padding:2px 2px 4px;scrollbar-width:none}.px5-chips::-webkit-scrollbar{display:none}
+.px5-chips button{flex:0 0 auto;padding:9px 16px;border-radius:99px;border:1px solid var(--bd);background:var(--c2);font-weight:700;font-size:12.5px;white-space:nowrap}
+.px5-chips button.on{background:var(--gold);color:var(--on);border-color:transparent}
+#mistakeTable[data-f=open] .mcard.mastered{display:none}#mistakeTable[data-f=done] .mcard:not(.mastered){display:none}
+.px5-rows{display:grid;gap:2px}.px5-row{display:grid;grid-template-columns:1fr auto;gap:6px 10px;align-items:center;margin-top:12px}
+.px5-row b{font-size:12.5px;display:flex;align-items:center;gap:9px;min-width:0}.px5-row b:before{content:"";width:9px;height:9px;border-radius:50%;flex:none;background:var(--sc,var(--ac));box-shadow:0 0 10px var(--sc,var(--ac))}
+.px5-row em{font-style:normal;font-size:11.5px;font-weight:700;color:var(--mu)}
+.px5-row .bar{grid-column:1/-1;height:8px}.px5-row .bar span{background:linear-gradient(90deg,var(--sc,var(--ac)),color-mix(in srgb,var(--sc,var(--ac)) 55%,#fff))}
+.px5-rows>:nth-child(1){--sc:#f59e0b}.px5-rows>:nth-child(2){--sc:#a78bfa}.px5-rows>:nth-child(3){--sc:#34d399}.px5-rows>:nth-child(4){--sc:#38bdf8}.px5-rows>:nth-child(5){--sc:#fb7185}.px5-rows>:nth-child(6){--sc:#94a3b8}
+.px5-sub{margin:20px 0 0;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--at)}
+/* old study ring card is replaced by the hero; track/arc now follow the theme */
+#view-study .grid.split>.grid>.card:first-child{display:none}
+#view-study .progress-ring circle:first-child{stroke:var(--c2)}#hoursRing{stroke:var(--ac)}
+#testHistory .task{flex-wrap:wrap;align-items:center}#testHistory .task-text{flex:1 1 100%}#testHistory .task .linkbtn{margin-left:auto}
+#insightSubjects .section-head{flex-wrap:wrap;gap:2px 10px}
+html[data-amoled=on] :is(#px5Study,#px5Tests){background:radial-gradient(120% 100% at 100% 0%,rgba(var(--rgb),.26),transparent 58%),#030304}
+</style>
+<script id="ps-tabs-v5-js">
+(function(){
+var $=function(i){return document.getElementById(i)},DN=['S','M','T','W','T','F','S'];
+function mk(id,view,where,cls){var v=$(view),el=$(id);if(el||!v)return el;el=document.createElement('div');el.id=id;el.className=cls;if(where&&where.nodeType)where.insertAdjacentElement('afterend',el);else v.insertAdjacentElement('afterbegin',el);return el}
+function put(el,h){if(el&&el.__h!==h){el.__h=h;el.innerHTML=h}}
+function days(n){var o=[],d=new Date();for(var i=n-1;i>=0;i--){var x=new Date(d);x.setDate(d.getDate()-i);o.push(dateKey(x))}return o}
+function r1(v){return String(Math.round(v*10)/10)}
+function sum(a){return a.reduce(function(s,x){return s+x},0)}
+function ico(bg,p){return '<span class="hd-ico" style="background:'+bg+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+p+'</svg></span>'}
+function stat(i,n,l){return '<div class="hd-stat">'+i+'<b>'+n+'</b><small>'+l+'</small></div>'}
+function ring(p,id,t,s){var R=44,C=2*Math.PI*R;return '<div class="hh-ring"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--ac2)"/><stop offset="1" style="stop-color:var(--ac)"/></linearGradient></defs><circle class="trk" cx="50" cy="50" r="'+R+'"/><circle class="arc" cx="50" cy="50" r="'+R+'" transform="rotate(-90 50 50)" style="stroke:url(#'+id+');--full:'+C.toFixed(1)+';stroke-dasharray:'+C.toFixed(1)+';stroke-dashoffset:'+(C*(1-Math.min(1,p))).toFixed(1)+'"/></svg><div class="hh-ring-c"><b>'+t+'</b><small>'+s+'</small></div></div>'}
+function bars(v,l){var mx=Math.max.apply(null,v.concat([.01]));return '<div class="px5-bars">'+v.map(function(x,i){return '<div class="px5-b'+(x?' has':'')+(i===v.length-1?' now':'')+'"><span class="v">'+(x?r1(x):'')+'</span><div class="w"><i style="height:'+(x?Math.max(10,x/mx*100):4)+'%"></i></div><span class="l">'+l[i]+'</span></div>'}).join('')+'</div>'}
+function mets(a){return '<div class="hh-mets">'+a.map(function(m){return '<div'+(m[2]?' class="hot"':'')+'><b>'+m[0]+'</b><small>'+m[1]+'</small></div>'}).join('')+'</div>'}
+function study(){var el=mk('px5Study','view-study',0,'card px5-hero');if(!el)return;
+ var T=today(),S=state.sessions,tg=Number(state.prefs.targetHours||5),ds=days(7),
+ hr=ds.map(function(k){return sum(S.filter(function(x){return x.date===k}).map(function(x){return Number(x.hours||0)}))}),
+ h=hr[6],wq=0,wc=0,n=S.filter(function(x){return x.date===T}).length,ok=h>=tg;
+ S.forEach(function(x){if(ds.indexOf(x.date)>-1){wq+=Number(x.questions||0);wc+=Number(x.correct||0)}});
+ put(el,'<div class="hh"><div class="hh-top"><span class="hh-eye">TODAY · FOCUS</span><span class="hh-chip '+(ok?'ok':'info')+'">● '+(ok?'Target hit':r1(Math.max(0,tg-h))+'h to go')+'</span></div><div class="hh-main"><div class="hh-days"><b>'+r1(h)+'</b><span>hours today</span><p>'+n+' session'+(n===1?'':'s')+' · target '+r1(tg)+'h</p></div>'+ring(tg?h/tg:0,'px5gS',Math.round(Math.min(100,tg?h/tg*100:0))+'%','of target')+'</div>'+bars(hr,ds.map(function(k){return DN[parseKey(k).getDay()]}))+mets([[r1(sum(hr)),'hours this week',1],[wq,'questions · 7 days'],[wq?Math.round(wc/wq*100)+'%':'—','accuracy · 7 days']])+'</div>')}
+function tests(){var el=mk('px5Tests','view-tests',0,'card px5-hero');if(!el)return;
+ var t=state.tests.filter(function(x){return Number(x.attempted)>0}).sort(function(a,b){return (a.date||'').localeCompare(b.date||'')}),L=t.length;
+ if(!L){put(el,'<div class="hh"><div class="hh-top"><span class="hh-eye">ACCURACY TREND</span><span class="hh-chip none">No tests yet</span></div><div class="hh-days cta"><h3>Log your first test</h3><p>Your accuracy trend and best result will show up here.</p></div></div>');return}
+ var ac=t.map(function(x){return x.correct/x.attempted*100}),last=ac[L-1],d=L>1?last-ac[L-2]:null,p=ac.slice(-10),W=300,H=70,P=6,st=p.length>1?(W-2*P)/(p.length-1):0,
+ xy=p.map(function(v,i){return [P+i*st,H-P-v/100*(H-2*P)]}),ln=xy.map(function(q,i){return (i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)}).join(' '),
+ ar=ln+' L'+xy[xy.length-1][0].toFixed(1)+' '+H+' L'+xy[0][0].toFixed(1)+' '+H+' Z',mo=today().slice(0,7),lt=t[L-1];
+ put(el,'<div class="hh"><div class="hh-top"><span class="hh-eye">ACCURACY TREND</span><span class="hh-chip '+(d===null?'info':d>=0?'ok':'bad')+'">'+(d===null?'● First test':(d>=0?'▲ +':'▼ ')+Math.round(d)+'% vs previous')+'</span></div><div class="hh-days"><b>'+Math.round(last)+'%</b><span>latest accuracy</span><p>'+esc(lt.name)+'</p></div><svg class="px5-spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="px5a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--ac2);stop-opacity:.35"/><stop offset="1" style="stop-color:var(--ac2);stop-opacity:0"/></linearGradient></defs><path d="'+ar+'" fill="url(#px5a)"/><path d="'+ln+'" fill="none" stroke="var(--ac)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg>'+mets([[Math.round(Math.max.apply(null,ac))+'%','best accuracy',1],[t.filter(function(x){return (x.date||'').slice(0,7)===mo}).length,'tests this month'],[lt.score==null?'—':r1(Number(lt.score)),'latest score']])+'</div>')}
+function mist(){var el=mk('px5Mist','view-mistakes',0,'card hd-stats');if(!el)return;
+ var M=state.mistakes,op=M.filter(function(m){return !m.mastered}).length;
+ put(el,stat(ico('linear-gradient(135deg,#fb7185,#e11d48)','<path d="M12 9v4m0 4h.01"/><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0Z"/>'),op,'Open mistakes')+stat(ico('linear-gradient(135deg,#fbbf24,#d97706)','<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),dueMistakesNow().length,'Reviews due')+stat(ico('linear-gradient(135deg,#34d399,#059669)','<path d="m5 12 4 4L19 6"/>'),M.length-op,'Mastered'));
+ var tb=$('mistakeTable');if(tb&&!$('px5MF')){var c=document.createElement('div');c.id='px5MF';c.className='px5-chips';c.innerHTML='<button class="on" data-f="">All</button><button data-f="open">Needs review</button><button data-f="done">Mastered</button>';c.onclick=function(e){var b=e.target.closest('button');if(!b)return;c.querySelectorAll('button').forEach(function(x){x.classList.toggle('on',x===b)});if(b.dataset.f)tb.dataset.f=b.dataset.f;else delete tb.dataset.f};tb.insertAdjacentElement('beforebegin',c)}}
+function ins(){var an=document.querySelector('#view-insights .grid.stats');if(!an)return;var el=mk('px5Ins','view-insights',an,'card');if(!el)return;
+ var ds=days(7),S=state.sessions,hr=ds.map(function(k){return sum(S.filter(function(x){return x.date===k}).map(function(x){return Number(x.hours||0)}))});
+ var rows=EXAMS[EXAM].subs.map(function(s){var q=0,c=0;S.forEach(function(x){if(x.subject===s){q+=Number(x.questions||0);c+=Number(x.correct||0)}});var p=q?Math.round(c/q*100):0;return '<div class="px5-row"><b>'+esc(subjectName(s))+'</b><em>'+(q?p+'% · '+q+' Q':'No practice yet')+'</em><div class="bar"><span style="width:'+p+'%"></span></div></div>'}).join('');
+ put(el,'<div class="section-head"><div><h2>Last 7 days</h2><p>Focused hours per day · '+r1(sum(hr))+'h total</p></div></div>'+bars(hr,ds.map(function(k){return DN[parseKey(k).getDay()]}))+'<div class="px5-sub">Accuracy by subject</div><div class="px5-rows">'+rows+'</div>')}
+function syl(){var an=$('statusFilters');an=an&&an.parentElement;if(!an)return;var el=mk('px5Syl','view-syllabus',an,'card hd-stats');if(!el)return;
+ var d=0,l=0,n=0;TOPICS.forEach(function(t){var s=getStatus(t);if(s==='Done'||s==='Revised')d++;else if(s==='Learning')l++;else n++});
+ put(el,stat(ico('linear-gradient(135deg,#34d399,#059669)','<path d="m5 12 4 4L19 6"/>'),d,'Done')+stat(ico('linear-gradient(135deg,#fbbf24,#d97706)','<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),l,'Learning')+stat(ico('linear-gradient(135deg,#a78bfa,#7c3aed)','<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"/>'),n,'Not started'))}
+function all(){try{study();tests();mist();ins();syl()}catch(e){console.warn('tabs-v5',e)}}
+var _r=renderAll;renderAll=function(){var r=_r.apply(this,arguments);all();return r};
+var _g=go;go=function(){var r=_g.apply(this,arguments);all();return r};
+/* date rolls over while the app stays open: refresh default dates + views */
+var last=today();document.addEventListener('visibilitychange',function(){if(document.hidden)return;var t=today();if(t===last)return;document.querySelectorAll('input[type=date][name=date]').forEach(function(i){if(i.value===last)i.value=t});last=t;renderAll()});
+all();
+})();
+</script>
+<style id="ps-train-css">
+#view-train.active{display:flex;flex-direction:column;gap:14px}
+#view-train .card{margin:0;border-radius:26px;padding:18px}
+.px6-hero,#px6Home{position:relative;overflow:hidden;background:radial-gradient(110% 100% at 100% 0%,rgba(var(--rgb),.26),transparent 58%),linear-gradient(180deg,var(--c1),var(--card))!important;border-color:color-mix(in srgb,var(--ac) 30%,var(--bd))!important}
+#px6Home{padding:18px;border-radius:26px;border:1px solid}
+.px6-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.px6-row h3{margin:0;font-size:20px;letter-spacing:-.02em}.px6-row p{margin:3px 0 0;font-size:12.5px;color:var(--mu)}
+.px6-wk{display:flex;gap:6px;margin:14px 0}.px6-dot{flex:1;aspect-ratio:1;max-width:38px;display:grid;place-items:center;border-radius:50%;font-style:normal;font-size:11px;font-weight:800;background:var(--c2);color:var(--mu)}
+.px6-dot.on{background:linear-gradient(135deg,var(--ac2),var(--ac));color:var(--on)}.px6-dot.now{outline:2px solid var(--ac);outline-offset:1px}
+.px6-go{width:100%;min-height:50px;font-weight:800;background:var(--gold)!important;color:var(--on)!important;border:0!important;box-shadow:0 14px 28px -14px rgba(var(--rgb),.9)}
+.px6-lab{margin:14px 0 6px;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--at)}
+.px6-li{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;margin-top:8px;border-radius:14px;background:var(--c2);border:1px solid var(--bd);font-size:13px}
+.px6-li small{display:block;color:var(--mu);font-size:11.5px}
+.px6-big{font-size:54px;font-weight:800;letter-spacing:-.04em;text-align:center;background:var(--gold);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.px6-2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.px6-2 .full{grid-column:1/-1}
+.px6-f{width:100%;margin-top:8px;padding:12px 14px;border-radius:14px;border:1px solid var(--bd);background:var(--c2);font-size:14px}
+#px6Run{position:fixed;inset:0;z-index:10060;background:var(--bg);color:var(--tx);display:flex;flex-direction:column;padding:calc(env(safe-area-inset-top,0px) + 14px) 16px calc(env(safe-area-inset-bottom,0px) + 16px);overflow-y:auto}
+.px6-q{font-size:40px;font-weight:800;text-align:center;letter-spacing:-.02em;margin:22px 0;word-break:break-word}
+.px6-in{width:100%;min-height:60px;border-radius:16px;border:1px solid var(--bd);background:var(--c2);font-size:26px;font-weight:800;text-align:center}
+.px6-fb{text-align:center;color:var(--r);font-weight:700;font-size:16px;padding:14px 0}
+.px6-pass{font-size:17px;line-height:1.7;margin:6px 0 12px}
+html[data-amoled=on] #px6Run{background:#000}
+</style>
+<script id="ps-train-js">
+(function(){
+var $=function(i){return document.getElementById(i)},R=function(a,b){return a+Math.floor(Math.random()*(b-a+1))},run=null,iv=null,sel={ty:'mixed',n:20,sub:'Maths',top:'',min:25,act:'Concept learning'};
+function T(){var t=state.train;if(!t||typeof t!=='object'||Array.isArray(t))t=state.train={};t.drills=t.drills||[];t.cards=t.cards||[];t.typing=t.typing||[];t.weak=t.weak||{};t.rem=t.rem||{on:false,time:'20:00',last:''};return t}
+function persist(){try{localStorage.setItem(KEY,JSON.stringify(state));localStorage.setItem('prepspace_last_edit',new Date().toISOString())}catch(e){}try{window.prepSpaceCloud&&window.prepSpaceCloud.queueSync()}catch(e){}}
+function shuf(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=R(0,i),t=a[i];a[i]=a[j];a[j]=t}return a}
+function addD(k,n){var d=new Date(k+'T12:00:00');d.setDate(d.getDate()+n);return dateKey(d)}
+function mmss(s){s=Math.max(0,Math.round(s));return Math.floor(s/60)+':'+('0'+s%60).slice(-2)}
+function days(n){var o=[];for(var i=n-1;i>=0;i--)o.push(addD(today(),-i));return o}
+var LBL={tables:'Tables',squares:'Squares / roots',cubes:'Cubes / roots',frac:'Fraction → %',bodmas:'BODMAS',roots:'Square root'};
+var G={tables:function(){var a=R(2,20),b=R(2,20);return [a+' × '+b,a*b]},
+squares:function(){var a=R(2,30);return Math.random()<.7?[a+'²',a*a]:['√'+a*a,a]},
+cubes:function(){var a=R(2,15);return Math.random()<.7?[a+'³',a*a*a]:['∛'+a*a*a,a]},
+frac:function(){var d=R(2,20),n=R(1,Math.min(d-1,7));return [n+'/'+d+' = ?%',Math.round(n/d*1e4)/100]},
+bodmas:function(){var a=R(10,50),b=R(2,12),c=R(2,12),d=R(5,40),k=R(0,2);return k===0?['('+a+' + '+b+') × '+c+' − '+d,(a+b)*c-d]:k===1?[a+' + '+b+' × '+c+' − '+d,a+b*c-d]:[a+' × '+b+' − '+c+' × '+d,a*b-c*d]},
+roots:function(){var a=R(11,50);return ['√'+a*a,a]}};
+function mkQs(type,n){var t=T(),keys={},qs=[],names=['tables','squares','cubes','frac','bodmas','roots'];
+ shuf(Object.keys(t.weak).filter(function(k){return type==='mixed'||t.weak[k].t===type})).slice(0,Math.floor(n*.3)).forEach(function(k){keys[k]=1;qs.push({q:k,a:t.weak[k].a,t:t.weak[k].t})});
+ for(var tr=0;qs.length<n&&tr<400;tr++){var ty=type==='mixed'?names[R(0,5)]:type,g=G[ty](),k=g[0];if(keys[k]&&tr<300)continue;keys[k]=1;qs.push({q:k,a:g[1],t:ty})}
+ return shuf(qs)}
+function ov(){var e=$('px6Run');if(!e){e=document.createElement('div');e.id='px6Run';e.setAttribute('role','dialog');e.setAttribute('aria-modal','true');document.body.appendChild(e)}return e}
+function closeRun(){clearInterval(iv);var e=$('px6Run');if(e)e.remove();run=null;save()}
+function top(i,n){return '<div class="pxd-top"><button class="pxd-x" data-a="close" aria-label="Close">'+psIcon('x')+'</button><div class="bar"><span style="width:'+Math.min(100,i/Math.max(1,n)*100)+'%"></span></div><span class="pxd-count">'+Math.min(i+1,n)+'/'+n+'</span></div>'}
+function sum(big,lab,txt){return '<div class="pxd-card"><div class="pxd-face pxd-sum"><b>'+big+'</b><div class="pxd-lab" style="margin-top:8px">'+lab+'</div><p style="color:var(--mu);line-height:1.6;margin:12px 0 0">'+txt+'</p></div><div class="pxd-actions"><button class="btn primary full" data-a="close">Done</button></div></div>'}
+function draw(){var e=ov(),r=run,h='';
+ if(r.kind==='drill'){var q=r.qs[r.i];if(!q){return endDrill()}
+  h=top(r.i,r.qs.length)+'<div class="pxd-card"><div class="pxd-face"><div class="pxd-lab">'+LBL[q.t]+'</div><div class="px6-q">'+esc(q.q)+'</div>'+(r.fb!=null?'<div class="px6-fb">'+psIcon('x')+' Sahi jawab: <b>'+esc(r.fb)+'</b></div>':'<input class="px6-in" id="px6A" inputmode="decimal" autocomplete="off" placeholder="Answer">')+'</div><div class="pxd-actions"><button class="btn primary full" data-a="'+(r.fb!=null?'next':'check')+'">'+(r.fb!=null?'Next →':'Check')+'</button></div></div>';e.innerHTML=h;var i=$('px6A');if(i)i.focus();return}
+ if(r.kind==='cards'){var c=state.train.cards.find(function(x){return x.id===r.q[r.i]});if(!c){return endCards()}
+  h=top(r.i,r.q.length)+'<div class="pxd-card"><div class="pxd-face"><div class="pxd-chips"><span class="pill purple">'+esc(c.kind)+'</span></div><div class="pxd-lab">Front</div><div class="pxd-text">'+esc(c.front)+'</div>'+(r.show?'<div class="pxd-ans"><div class="pxd-lab">Answer</div><div class="pxd-text">'+esc(c.back)+'</div>'+(c.ex?'<div class="pxd-lab" style="margin-top:10px">Example / Syn-Ant</div><div class="pxd-text" style="font-size:15px">'+esc(c.ex)+'</div>':'')+'</div>':'')+'</div><div class="pxd-actions">'+(r.show?'<button class="btn pxd-miss" data-a="miss">'+psIcon('x')+' Missed</button><button class="btn" data-a="hard">Hard</button><button class="btn pxd-ok" data-a="got">'+psIcon('check')+' Easy</button>':'<button class="btn primary full" data-a="show">Show answer</button>')+'</div></div>';e.innerHTML=h;return}
+ if(r.kind==='type'){e.innerHTML='<div class="pxd-top"><button class="pxd-x" data-a="close" aria-label="Close">'+psIcon('x')+'</button><div class="bar"><span id="px6Tb" style="width:0%"></span></div><span class="pxd-count" id="px6Tt">60s</span></div><div class="pxd-card"><div class="pxd-face"><div class="pxd-lab">Type this (timer starts on first key)</div><div class="px6-pass">'+esc(r.p)+'</div><textarea class="px6-f" id="px6T" rows="6" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea></div></div>';$('px6T').focus()}}
+function startDrill(ty,n){run={kind:'drill',type:ty,qs:mkQs(ty,n),i:0,ok:0,miss:0,t0:Date.now(),fb:null};draw()}
+function check(){var q=run.qs[run.i],i=$('px6A');if(!i)return;var v=parseFloat(String(i.value).replace(',','.'));if(isNaN(v))return;var w=T().weak;
+ if(Math.abs(v-q.a)<=(q.t==='frac'?Math.max(.06,Math.abs(q.a)*.003):1e-4)){run.ok++;delete w[q.q];FX.fire('tap');nextQ()}else{run.miss++;w[q.q]={a:q.a,t:q.t};run.fb=String(q.a);FX.fire('error');draw()}}
+function nextQ(){run.i++;run.fb=null;draw()}
+function endDrill(){var r=run,t=T(),sec=Math.round((Date.now()-r.t0)/1000),n=r.qs.length,prev=t.drills.filter(function(d){return d.type===r.type}).pop();
+ t.drills.push({date:today(),type:r.type,n:n,ok:r.ok,sec:sec});t.drills=t.drills.slice(-80);persist();FX.fire('success');
+ ov().innerHTML=top(n,n)+sum(r.ok+'/'+n,'Correct · '+Math.round(r.ok/n*100)+'%',mmss(sec)+' total · '+(sec/n).toFixed(1)+'s per question'+(prev?'<br>Pichhli baar: '+prev.ok+'/'+prev.n+' in '+mmss(prev.sec):'')+(r.miss?'<br>Galat wale agli baar pehle aayenge.':''))}
+function startCards(){var t=T(),q=shuf(t.cards.filter(function(c){return c.due<=today()&&(!sel.rk||sel.rk==='All'||c.kind===sel.rk)})).slice(0,20).map(function(c){return c.id});if(!q.length){toast('Is category me abhi koi card due nahi hai');return}run={kind:'cards',q:q,i:0,ok:0,miss:0,show:false};draw()}
+function ansCard(g){var c=state.train.cards.find(function(x){return x.id===run.q[run.i]});if(c){var b0=c.box||0;if(g===2)c.box=Math.min(b0+1,4);else if(g===1)c.box=b0;else c.box=0;c.due=addD(today(),g===2?[1,3,7,14,30][c.box]:g===1?[1,2,4,8,16][c.box]:1)}g?run.ok++:run.miss++;persist();run.i++;run.show=false;draw()}
+function endCards(){var r=run;FX.fire('success');ov().innerHTML=top(r.q.length,r.q.length)+sum(r.ok+'/'+(r.ok+r.miss),'Remembered','Missed cards kal dobara aayenge.')}
+var PASS=['Regular practice builds speed and accuracy together. Type slowly at first, keep your eyes on the text, and let your fingers learn the keys. Speed will follow once mistakes become rare.','A good exam day begins the night before. Sleep early, keep your documents ready, and reach the centre with time to spare. A calm mind solves questions faster than a rushed one.','The Staff Selection Commission conducts examinations for many government posts across the country. Candidates should read each notice carefully and prepare a plan for every section.','Reading newspapers every day improves vocabulary, general awareness and typing speed. Note down new words, revise them in the evening, and use them in your own sentences.','Accuracy matters more than speed in a typing test. Every wrong word costs marks, so correct habits are worth building now. Keep your wrists relaxed and your posture straight.'];
+function startType(){run={kind:'type',p:PASS[R(0,PASS.length-1)],t0:0};draw()}
+function endType(){clearInterval(iv);var r=run,s=$('px6T').value,P=r.p,ok=0;for(var i=0;i<s.length&&i<P.length;i++)if(s[i]===P[i])ok++;
+ var el=Math.min(60,(Date.now()-r.t0)/1000)/60,wpm=Math.round(ok/5/Math.max(el,.1)),acc=s.length?Math.round(ok/s.length*100):0;T().typing.push({date:today(),wpm:wpm,acc:acc});T().typing=T().typing.slice(-40);persist();FX.fire('success');
+ ov().innerHTML=top(1,1)+sum(wpm+' WPM','Accuracy '+acc+'%','Typing test me accuracy zyada zaroori hai. Pehle accuracy 95%+ karo, phir speed badhao.')}
+/* study timer */
+function tStart(){var d=sel.min*60,s=sel.sub,tp=sel.top||(TOPICS.find(function(x){return x.subject===s})||{}).topic;T().timer={start:Date.now(),dur:d,end:Date.now()+d*1000,subject:s,topic:tp,act:sel.act};persist();hub()}
+function tStop(save_){var t=T(),m=t.timer;if(!m)return;var sec=Math.min(m.dur,Math.round((Date.now()-m.start)/1000));t.timer=null;
+ if(save_&&sec>=60){state.sessions.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),date:today(),subject:m.subject,topic:m.topic,activity:m.act||'Concept learning',source:'Timer',hours:Math.round(sec/36)/100,questions:0,correct:0,confidence:'3',next:''});toast('Session saved · '+mmss(sec))}else if(save_)toast('Under 1 minute, not saved');
+ save()}
+function tick(){var m=T().timer;if(m){var left=Math.round((m.end-Date.now())/1000),e=$('px6Tm');if(e)e.textContent=mmss(left);if(left<=0){FX.fire('success');notify('Timer done','Session saved. Take a short break.');tStop(true)}}remCheck()}
+setInterval(tick,1000);
+function notify(t,b){try{if(window.Notification&&Notification.permission==='granted'){if(navigator.serviceWorker&&navigator.serviceWorker.ready)navigator.serviceWorker.ready.then(function(r){r.showNotification(t,{body:b,icon:'./icon.png'})}).catch(function(){new Notification(t,{body:b})});else new Notification(t,{body:b})}}catch(e){}}
+function remCheck(){var r=T().rem;if(!r.on||!window.Notification||Notification.permission!=='granted'||r.last===today())return;var n=new Date(),hm=('0'+n.getHours()).slice(-2)+':'+('0'+n.getMinutes()).slice(-2);if(hm<r.time)return;r.last=today();persist();
+ if(state.sessions.some(function(x){return x.date===today()}))return;var due=dueMistakesNow().length,cd=T().cards.filter(function(c){return c.due<=today()}).length;notify('PrepSpace · aaj ka log baaki hai',(due?due+' mistake reviews due. ':'')+(cd?cd+' flashcards due. ':'')+'Ek focused block karke log karo.')}
+/* weekly report */
+function rep(){var ds=days(7),S=state.sessions.filter(function(x){return ds.indexOf(x.date)>-1}),hr=0,q=0,c=0;S.forEach(function(x){hr+=Number(x.hours||0);q+=Number(x.questions||0);c+=Number(x.correct||0)});
+ var Ts=state.tests.filter(function(x){return ds.indexOf(x.date)>-1&&Number(x.attempted)>0}),ta=Ts.length?Math.round(Ts.reduce(function(a,x){return a+x.correct/x.attempted*100},0)/Ts.length):null,
+ Ms=state.mistakes.filter(function(x){return ds.indexOf(x.date)>-1}).length,D=T().drills.filter(function(x){return ds.indexOf(x.date)>-1}),wz=getWeakZoneCandidates().slice(0,3).map(function(x){return x.topic}),nx=recommendedTopic();
+ var L=[['Study hours',(Math.round(hr*10)/10)+'h · '+S.length+' sessions'],['Days studied',new Set(S.map(function(x){return x.date})).size+'/7'],['Questions',q+(q?' · '+Math.round(c/q*100)+'% accuracy':'')],['Tests',Ts.length+(ta!==null?' · avg '+ta+'%':'')],['Mistakes logged',String(Ms)],['Speed drills',D.length+(D.length?' · avg '+Math.round(D.reduce(function(a,x){return a+x.ok/x.n*100},0)/D.length)+'%':'')],['Weak chapters',wz.join(', ')||'None flagged'],['Next focus',nx?nx.topic:'Revision']];return L}
+/* hub */
+function chip(a,v,on,t){return '<button class="'+(on?'on':'')+'" data-a="'+a+'" data-v="'+v+'">'+t+'</button>'}
+function wk(){var ds={};T().drills.forEach(function(d){ds[d.date]=1});var n=new Date(),m=new Date(n);m.setDate(n.getDate()-(n.getDay()+6)%7);var h='';for(var i=0;i<7;i++){var d=new Date(m);d.setDate(m.getDate()+i);var k=dateKey(d);h+='<i class="px6-dot'+(ds[k]?' on':'')+(k===today()?' now':'')+'">'+'MTWTFSS'[i]+'</i>'}return '<div class="px6-wk">'+h+'</div>'}
+function stk(){var s={};T().drills.forEach(function(d){s[d.date]=1});var k=today(),n=0;if(!s[k])k=addD(k,-1);var fz=0;while(1){if(s[k]){n++;k=addD(k,-1)}else if(!fz&&s[addD(k,-1)]){fz=1;k=addD(k,-1)}else break}return n}
+function hub(){var v=$('view-train');if(!v)return;var t=T(),due=t.cards.filter(function(c){return c.due<=today()}).length,mt=t.timer,ex=EXAMS[EXAM],tys=[['mixed','Mixed'],['tables','Tables'],['squares','Squares'],['cubes','Cubes'],['frac','Fraction %'],['bodmas','BODMAS'],['roots','Roots']],
+ last=t.drills.slice(-3).reverse().map(function(d){return '<div class="px6-li"><span>'+esc(d.type)+' · '+esc(mDate(d.date,true))+'<small>'+mmss(d.sec)+' · '+(d.sec/d.n).toFixed(1)+'s/Q</small></span><span class="pill '+(d.ok/d.n>=.8?'green':'amber')+'">'+d.ok+'/'+d.n+'</span></div>'}).join(''),
+ subs=ex.subs.map(function(s){return '<option'+(s===sel.sub?' selected':'')+'>'+s+'</option>'}).join(''),
+ tops=TOPICS.filter(function(x){return x.subject===sel.sub}).map(function(x){return '<option'+(x.topic===sel.top?' selected':'')+'>'+esc(x.topic)+'</option>'}).join(''),
+ cl=t.cards.slice(-4).reverse().map(function(c){return '<div class="px6-li"><span>'+esc(c.front)+'<small>'+esc(c.kind)+' · box '+(c.box||0)+' · next '+esc(mDate(c.due,true))+'</small></span><button class="linkbtn" data-a="delcard" data-v="'+c.id+'">Delete</button></div>'}).join(''),
+ ty=t.typing,best=ty.length?Math.max.apply(null,ty.map(function(x){return x.wpm})):0,
+ tl=ty.slice(-3).reverse().map(function(x){return '<div class="px6-li"><span>'+esc(mDate(x.date,true))+'</span><span class="pill purple">'+x.wpm+' WPM · '+x.acc+'%</span></div>'}).join(''),
+ rp=rep().map(function(x){return '<div class="px6-li"><span>'+x[0]+'</span><b>'+esc(x[1])+'</b></div>'}).join(''),
+ sh=function(a,b,p){return '<div class="section-head"><div><h2>'+a+'</h2><p>'+b+'</p></div>'+(p||'')+'</div>'};
+ var tm=mt?'<div class="px6-big" id="px6Tm">'+mmss((mt.end-Date.now())/1000)+'</div><p class="muted" style="text-align:center;margin:0 0 12px">'+esc(mt.subject)+' · '+esc(mt.topic||'')+'</p><div class="px6-2"><button class="btn" data-a="tcancel">Cancel</button><button class="btn primary" data-a="tstop">Stop &amp; save</button></div>':'<div class="px6-2"><select class="px6-f" id="px6Sub" style="margin:0">'+subs+'</select><select class="px6-f" id="px6Act" style="margin:0">'+['Concept learning','Basic practice','PYQs','Revision'].map(function(a){return '<option'+(a===sel.act?' selected':'')+'>'+a+'</option>'}).join('')+'</select><select class="px6-f full" id="px6Top" style="margin:0">'+tops+'</select></div><div class="px5-chips" style="margin:12px 0 0">'+[25,45,60,90].map(function(m){return chip('tmin',m,sel.min===m,m+' min')}).join('')+'</div><button class="btn px6-go" style="margin-top:10px" data-a="tgo">Start timer</button>';
+ var rem=t.rem,np=window.Notification?Notification.permission:'unsupported';
+ v.innerHTML='<div class="card px6-hero"><div class="px6-row"><div><h3>Speed drill</h3><p>Aaj ka workout · '+sel.n+' questions · about '+Math.round(sel.n*15/60)+' min</p></div><span class="pill amber">'+psIcon('flame')+' '+stk()+'</span></div>'+wk()+'<div class="px5-chips">'+tys.map(function(x){return chip('ty',x[0],sel.ty===x[0],x[1])}).join('')+'</div><div class="px5-chips">'+[10,20,30].map(function(n){return chip('cnt',n,sel.n===n,n+' Q')}).join('')+'</div><button class="btn px6-go" data-a="go">▶ Start drill</button>'+(last?'<div class="px6-lab">Recent drills</div>'+last:'')+'</div>'
+ +'<div class="card">'+sh('Vocab &amp; CA flashcards','Spaced revision: 1, 3, 7, 14, 30 days','<span class="pill '+(due?'amber':'green')+'">'+due+' due</span>')+'<div class="px5-chips" style="margin:0 0 10px">'+['All','Vocab','Current Affairs','Fact / Formula'].map(function(k){return '<button class="'+((sel.rk||'All')===k?'on':'')+'" data-a="rk" data-v="'+k+'">'+k+'</button>'}).join('')+'</div><button class="btn px6-go" data-a="review"'+(due?'':' disabled')+'>Review due cards</button><div class="px6-lab">Add a card</div><select class="px6-f" id="px6K"><option>Vocab</option><option>Current Affairs</option><option>Fact / Formula</option></select><input class="px6-f" id="px6F" placeholder="Front: word / question"><textarea class="px6-f" id="px6B" rows="2" placeholder="Back: meaning, synonym, answer"></textarea><input class="px6-f" id="px6X" placeholder="Example sentence / synonym / antonym (optional)"><button class="btn" style="width:100%;margin-top:10px" data-a="addcard">Save card</button>'+cl+'</div>'
+ +'<div class="card">'+sh('Study timer','Stop karte hi session apne aap log ho jaata hai','<span class="pill purple">Auto log</span>')+tm+'</div>'
+ +(EXAM==='chsl'?'<div class="card">'+sh('Typing practice','60 seconds · WPM aur accuracy','<span class="pill purple">Best '+best+' WPM</span>')+'<button class="btn px6-go" data-a="typing">Start typing test</button>'+tl+'</div>':'')
+ +'<div class="card">'+sh('Weekly report','Last 7 days')+rp+trendHtml()+'<button class="btn" style="width:100%;margin-top:12px" data-a="copyrep">Copy report</button></div>'
+ +'<div class="card">'+sh('Daily reminder','Aaj ka log na hua to notification','<span class="pill '+(rem.on?'green':'')+'">'+(rem.on?'On':'Off')+'</span>')+'<div class="px6-2"><input class="px6-f" type="time" id="px6RT" value="'+rem.time+'" style="margin:0"><button class="btn" data-a="remtog">'+(rem.on?'Turn off':'Turn on')+'</button></div><p class="muted" style="font-size:12px;line-height:1.6;margin:10px 0 0">'+(np==='unsupported'?'Is browser me notifications supported nahi.':np==='denied'?'Notification permission blocked hai. Browser settings me allow karo.':'App open ya recently open ho tab chalta hai. Background push ke liye server chahiye, jo is file me nahi hai.')+'</p></div>'}
+/* home card + mock analysis */
+function home(){var an=$('pxCountdown');if(!an)return;var el=$('px6Home');if(!el){el=document.createElement('div');el.id='px6Home';el.className='card';an.insertAdjacentElement('afterend',el)}
+ var h='<div class="px6-row"><div><h3>Daily Workout</h3><p>'+sel.n+' questions · about '+Math.round(sel.n*15/60)+' min</p></div><span class="pill amber">'+psIcon('flame')+' '+stk()+'</span></div>'+wk()+'<button class="btn px6-go" data-a="quick">▶ Start workout</button>';if(el.__h!==h){el.__h=h;el.innerHTML=h}}
+function mock(){var an=$('px5Tests');if(!an)return;var el=$('px6Mock');if(!el){el=document.createElement('div');el.id='px6Mock';el.className='card';an.insertAdjacentElement('afterend',el)}
+ var ts=state.tests.filter(function(x){return Number(x.attempted)>0}),by={},wr=0,neg=0;
+ ts.forEach(function(x){var w=x.attempted-x.correct,m=markScheme(x.type,x.subject)[1];wr+=w;neg+=w*m;if(x.subject&&x.subject!=='All subjects'){var b=by[x.subject]||(by[x.subject]={a:0,c:0,m:0,q:0});b.a+=x.attempted;b.c+=x.correct;b.q+=x.attempted;b.m+=Number(x.minutes||0)}});
+ var rows=Object.keys(by).map(function(s){var b=by[s],p=Math.round(b.c/b.a*100),sp=b.m?Math.round(b.m*60/b.q)+'s/Q':'time not logged';return '<div class="px5-row"><b>'+esc(subjectName(s))+'</b><em>'+p+'% · '+sp+'</em><div class="bar"><span style="width:'+p+'%"></span></div></div>'}).join('');
+ var h='<div class="section-head"><div><h2>Mock analysis</h2><p>Marks kahan ja rahe hain</p></div><span class="pill purple">Auto</span></div>'+(ts.length?'<div class="px6-2"><div class="px6-li"><span>Wrong answers<small>all tests</small></span><b>'+wr+'</b></div><div class="px6-li"><span>Marks lost to negatives<small>estimate</small></span><b>−'+(Math.round(neg*10)/10)+'</b></div></div>'+(rows?'<div class="px5-sub">Subject accuracy &amp; speed</div><div class="px5-rows">'+rows+'</div>':'<p class="muted" style="font-size:12px">Subject-wise analysis ke liye sectional tests log karo.</p>'):'<div class="empty">Tests log karo, phir yahan subject-wise accuracy, speed aur negative marks ka analysis dikhega.</div>');
+ if(el.__h!==h){el.__h=h;el.innerHTML=h}}
+/* wiring */
+var main=document.querySelector('main.main');if(main&&!$('view-train')){var s=document.createElement('section');s.className='view';s.id='view-train';main.appendChild(s)}
+meta.train=['TRAIN DAILY, SCORE HIGHER','Practice hub','Speed drills, flashcards, study timer, typing and your weekly report.'];
+document.addEventListener('click',function(ev){var b=ev.target.closest&&ev.target.closest('[data-a]');if(!b)return;var a=b.dataset.a,v=b.dataset.v;
+ if(a==='close')closeRun();else if(a==='check')check();else if(a==='next')nextQ();else if(a==='show'){run.show=true;draw()}else if(a==='got')ansCard(2);else if(a==='hard')ansCard(1);else if(a==='miss')ansCard(0);else if(a==='rk'){sel.rk=v;hub()}
+ else if(a==='quick')startDrill('mixed',sel.n);else if(a==='go')startDrill(sel.ty,sel.n);else if(a==='ty'){sel.ty=v;hub()}else if(a==='cnt'){sel.n=+v;hub();home()}
+ else if(a==='review')startCards();else if(a==='typing')startType();else if(a==='tgo')tStart();else if(a==='tstop')tStop(true);else if(a==='tcancel')tStop(false);else if(a==='tmin'){sel.min=+v;hub()}
+ else if(a==='addcard'){var f=$('px6F').value.trim(),bk=$('px6B').value.trim();if(!f||!bk){toast('Enter front and back of the card');return}T().cards.push({id:String(Date.now()),kind:$('px6K').value,front:f,back:bk,ex:($('px6X')?$('px6X').value.trim():''),box:0,due:today()});persist();toast('Card saved');save()}
+ else if(a==='delcard'){T().cards=T().cards.filter(function(c){return c.id!==v});persist();save()}
+ else if(a==='copyrep'){var tx='PrepSpace weekly report\n'+rep().map(function(x){return x[0]+': '+x[1]}).join('\n');try{navigator.clipboard.writeText(tx).then(function(){toast('Report copied')})}catch(e){toast('Copy failed')}}
+ else if(a==='remtog'){var r=T().rem;if(r.on){r.on=false;persist();hub();return}if(!window.Notification){toast('Notifications not supported');return}Notification.requestPermission().then(function(p){if(p==='granted'){r.on=true;r.last='';persist();toast('Reminder on')}else toast('Permission not granted');hub()})}});
+document.addEventListener('change',function(e){var i=e.target.id;if(i==='px6Sub'){sel.sub=e.target.value;sel.top='';hub()}else if(i==='px6Top')sel.top=e.target.value;else if(i==='px6Act')sel.act=e.target.value;else if(i==='px6RT'&&/^\d\d:\d\d$/.test(e.target.value)){T().rem.time=e.target.value;T().rem.last='';persist()}});
+document.addEventListener('keydown',function(e){if(e.key==='Enter'&&run&&run.kind==='drill'){e.preventDefault();run.fb!=null?nextQ():check()}});
+document.addEventListener('input',function(e){if(e.target.id!=='px6T'||!run||run.t0)return;run.t0=Date.now();iv=setInterval(function(){var el=(Date.now()-run.t0)/1000,l=$('px6Tt');if(l)l.textContent=Math.max(0,Math.ceil(60-el))+'s';var b=$('px6Tb');if(b)b.style.width=Math.min(100,el/.6)+'%';if(el>=60)endType()},200)});
+var _r=renderAll;renderAll=function(){var r=_r.apply(this,arguments);try{home();mock();if(!run)hub()}catch(e){console.warn('train',e)}return r};
+var _g=go;go=function(v){var r=_g.apply(this,arguments);try{if(v==='train')hub();home();mock()}catch(e){}return r};
+
+/* Practice v2 — stats strip, tabs, weak-spot drill, accuracy by type, quick reference */
+sel.tab='drill';
+function startWeak(){var w=T().weak,ks=Object.keys(w);if(!ks.length){toast('Abhi koi weak question nahi hai');return}run={kind:'drill',type:'weak',qs:shuf(ks).slice(0,20).map(function(k){return{q:k,a:w[k].a,t:w[k].t}}),i:0,ok:0,miss:0,t0:Date.now(),fb:null};draw()}
+function refCard(){var sq='',cu='',fr='';for(var i=1;i<=50;i++)sq+='<span>'+i+'² = '+i*i+'</span>';for(i=1;i<=30;i++)cu+='<span>'+i+'³ = '+i*i*i+'</span>';
+ [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,20].forEach(function(n){var p=100/n;fr+='<span>1/'+n+' = '+(Math.round(p*100)/100)+'%</span>'});
+ var d=function(t,g){return '<details class="px7-ref"><summary>'+t+'</summary><div class="px7-g">'+g+'</div></details>'};
+ return '<div class="section-head"><div><h2>Quick reference</h2><p>Calculation speed ke liye yaad rakho</p></div></div>'+d('Squares 1–50',sq)+d('Cubes 1–30',cu)+d('Fraction → %',fr)}
+function trendHtml(){var t=T(),td=today(),m={},i,mx=1,h='';t.drills.forEach(function(d){var o=m[d.date]||(m[d.date]={n:0,ok:0});o.n+=d.n;o.ok+=d.ok});
+ var acc=function(a,b){var n=0,k=0;for(var j=a;j<=b;j++){var o=m[addD(td,-j)];if(o){n+=o.n;k+=o.ok}}return n?Math.round(k/n*100):null};
+ for(i=13;i>=0;i--){var o=m[addD(td,-i)];if(o&&o.n>mx)mx=o.n}
+ for(i=13;i>=0;i--){var d=addD(td,-i),o=m[d]||{n:0,ok:0},p=o.n?Math.round(o.ok/o.n*100):0;h+='<i title="'+d+': '+o.n+' Q, '+p+'%" class="'+(o.n?(p>=80?'g':p>=60?'a':'r'):'')+'" style="height:'+Math.max(4,Math.round(o.n/mx*100))+'%"></i>'}
+ var a1=acc(0,6),a0=acc(7,13),dl=a1!=null&&a0!=null?(a1-a0):null;
+ return '<div class="px6-lab">Trend · last 14 days (questions/day)</div><div class="px7-tr">'+h+'</div><p class="muted" style="margin:8px 0 0">Accuracy: '+(a1==null?'–':a1+'%')+(dl==null?'':' · pichhle hafte se '+(dl>=0?'+':'')+dl+'%')+'</p>'}
+function enh(){var v=$('view-train');if(!v)return;var t=T(),cs=[].slice.call(v.children).filter(function(c){return c.classList.contains('card')});
+ cs.forEach(function(c){var h=c.querySelector('h2,h3'),x=h?h.textContent:'';c.dataset.pt=/^Speed/.test(x)?'drill':/^Vocab/.test(x)?'cards':/^Study/.test(x)?'timer':/^Typing/.test(x)?'typing':'more'});
+ var tabs=[['drill','Drill'],['cards','Cards'],['timer','Timer']];if(cs.some(function(c){return c.dataset.pt==='typing'}))tabs.push(['typing','Typing']);tabs.push(['more','More']);
+ if(!tabs.some(function(x){return x[0]===sel.tab}))sel.tab='drill';
+ var td=today(),from=addD(td,-6),tn=0,a7=0,n7=0,by={};
+ t.drills.forEach(function(d){if(d.date===td)tn+=d.n;if(d.date>=from){a7+=d.ok;n7+=d.n}var b=by[d.type]||(by[d.type]={ok:0,n:0,sec:0});b.ok+=d.ok;b.n+=d.n;b.sec+=d.sec||0});
+ var wk=Object.keys(t.weak).length,tile=function(i,b,l){return '<div class="px7-t"><i>'+i+'</i><b>'+b+'</b><span>'+l+'</span></div>'};
+ var head=document.createElement('div');head.className='px7-head';
+ head.innerHTML='<div class="px7-stats">'+tile(psIcon('flame'),stk(),'Streak')+tile(psIcon('pen'),tn,'Q today')+tile(psIcon('target'),n7?Math.round(a7/n7*100)+'%':'–','7-day acc.')+tile(psIcon('warn'),wk,'Weak Qs')+'</div><div class="px7-seg" role="tablist">'+tabs.map(function(x){return '<button role="tab" class="'+(x[0]===sel.tab?'on':'')+'" data-ptab="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div>';
+ var sk=stk(),yd=t.drills.some(function(d){return d.date===addD(td,-1)});if(tn===0&&sk>0)head.insertAdjacentHTML('afterbegin','<button class="btn px7-rem" data-a="quick">'+psIcon('flame')+' '+(yd?'Aaj ka drill baaki hai — '+sk+' din ki streak':'Kal chhoot gayi! Aaj drill karo, warna '+sk+' din ki streak toot jayegi')+'</button>');
+ v.insertBefore(head,v.firstChild);
+ var rows=Object.keys(by).map(function(k){var b=by[k],pc=Math.round(b.ok/b.n*100);return '<div class="px5-row"><b>'+esc(LBL[k]||k)+'</b><em>'+pc+'% · '+b.n+' Q · '+(b.sec/b.n).toFixed(1)+'s/Q</em><div class="bar"><span style="width:'+pc+'%"></span></div></div>'}).join('');
+ var wc=document.createElement('div');wc.className='card';wc.dataset.pt='drill';
+ wc.innerHTML='<div class="section-head"><div><h2>Weak spots</h2><p>Jo galat hue, unhe dobara karo</p></div><span class="pill '+(wk?'amber':'green')+'">'+wk+' saved</span></div>'+(rows?'<div class="px5-rows">'+rows+'</div>':'<div class="empty">Drills karo, phir type-wise accuracy yahan dikhegi.</div>')+'<button class="btn px6-go" style="margin-top:12px" data-a="weak"'+(wk?'':' disabled')+'>Practise weak questions</button>';
+ var hero=cs.filter(function(c){return c.dataset.pt==='drill'})[0];if(hero)hero.after(wc);else v.appendChild(wc);
+ var goal=t.goal||40,pc=Math.min(1,tn/goal),C=213.6,cnt={};t.drills.forEach(function(d){cnt[d.date]=(cnt[d.date]||0)+d.n});
+ var hm='';for(var k=27;k>=0;k--){var dd=addD(td,-k),c=cnt[dd]||0,lv=!c?0:c<goal/2?1:c<goal?2:3;hm+='<i class="l'+lv+(k===0?' now':'')+'" title="'+dd+': '+c+' Q"></i>'}
+ var bl=Math.max.apply(null,[0].concat(t.drills.filter(function(d){return d.type==='blitz'}).map(function(d){return d.ok})));
+ var gc=document.createElement('div');gc.className='card px7-goal';gc.dataset.pt='drill';
+ gc.innerHTML='<div class="px7-gr"><svg viewBox="0 0 80 80" class="px7-ring"><circle cx="40" cy="40" r="34" fill="none" stroke-width="8" class="tr"/><circle cx="40" cy="40" r="34" fill="none" stroke-width="8" stroke-linecap="round" stroke-dasharray="'+(pc*C)+' '+C+'" transform="rotate(-90 40 40)" class="fg"/></svg><div class="px7-gt"><b>'+(tn>=goal?psIcon('ok')+' Goal complete':tn+' / '+goal+' Q')+'</b><small>'+(tn>=goal?'Aaj ka target pura':(goal-tn)+' questions baaki')+'</small></div></div><div class="px5-chips" style="margin:12px 0 0">'+[20,40,60,100].map(function(n){return '<button class="'+(n===goal?'on':'')+'" data-a="px7g" data-v="'+n+'">'+n+' Q/day</button>'}).join('')+'</div><div class="px6-lab">Last 28 days</div><div class="px7-hm">'+hm+'</div><button class="btn px7-blitz" data-a="px7b"><span>'+psIcon('bolt')+' Blitz · 60 sec</span><small>'+(bl?'Best '+bl:'Jitne ho sake utne')+'</small></button>';
+ if(hero)hero.before(gc);else v.appendChild(gc);
+ var rc=document.createElement('div');rc.className='card';rc.dataset.pt='more';rc.innerHTML=refCard();
+ var m1=cs.filter(function(c){return c.dataset.pt==='more'})[0];if(m1)v.insertBefore(rc,m1);else v.appendChild(rc);
+ var ic=cs.filter(function(c){return c.dataset.pt==='cards'})[0],im=document.createElement('div');im.className='card';im.dataset.pt='cards';im.innerHTML=impHtml();if(ic)ic.after(im);else v.appendChild(im);pv();
+ [].slice.call(v.children).forEach(function(c){if(c.dataset&&c.dataset.pt)c.hidden=c.dataset.pt!==sel.tab})}
+
+LBL.blitz='Blitz 60s';LBL.weak='Weak drill';
+function startBlitz(){run={kind:'drill',type:'blitz',blitz:1,qs:mkQs('mixed',150),i:0,ok:0,miss:0,t0:Date.now(),fb:null};draw();clearInterval(iv);iv=setInterval(function(){if(!run||!run.blitz)return clearInterval(iv);var l=Math.max(0,60-(Date.now()-run.t0)/1000),c=$('px7Bt'),b=document.querySelector('#px6Run .pxd-top .bar span');if(c)c.textContent=Math.ceil(l)+'s · score '+run.ok;if(b)b.style.width=(100-l/.6)+'%';if(l<=0)endBlitz()},200)}
+function endBlitz(){clearInterval(iv);var r=run;if(!r||!r.blitz)return;r.blitz=0;var t=T(),n=r.ok+r.miss,pb=Math.max.apply(null,[0].concat(t.drills.filter(function(d){return d.type==='blitz'}).map(function(d){return d.ok})));
+ if(n)t.drills.push({date:today(),type:'blitz',n:n,ok:r.ok,sec:60});t.drills=t.drills.slice(-80);persist();FX.fire('success');
+ ov().innerHTML=top(1,1)+sum(r.ok+' correct','60 seconds · '+(n?Math.round(r.ok/n*100):0)+'% accuracy',r.ok>pb?psIcon('trophy')+' Naya best score!':'Best: '+pb)}
+var _dw=draw;draw=function(){var x=_dw.apply(this,arguments);if(run&&run.blitz&&run.kind==='drill'){var c=document.querySelector('#px6Run .pxd-count');if(c)c.id='px7Bt'}return x};
+
+/* Bulk flashcard import */
+sel.imp='';sel.ik='Vocab';sel.impOpen=false;
+function parseImp(txt){var rows=[],seen={},dup=0,bad=0,first=true;T().cards.forEach(function(c){seen[String(c.front).trim().toLowerCase()]=1});
+ txt.split(/\r?\n/).forEach(function(l){l=l.trim();if(!l)return;var f,b,m=l.match(/^"([^"]*)"\s*,\s*"?(.*?)"?$/);
+  if(m){f=m[1];b=m[2]}else{var d=['\t','|',';',' - ',' – ',' — ',','].filter(function(x){return l.indexOf(x)>0})[0];if(!d){bad++;first=false;return}var i=l.indexOf(d);f=l.slice(0,i);b=l.slice(i+d.length)}
+  f=f.trim();b=b.trim();if(first&&/^(front|word|question|term)$/i.test(f)&&/^(back|meaning|answer|definition)$/i.test(b)){first=false;return}first=false;
+  if(!f||!b){bad++;return}var k=f.toLowerCase();if(seen[k]){dup++;return}seen[k]=1;rows.push({f:f,b:b})});
+ return{rows:rows.slice(0,500),dup:dup,bad:bad,cut:Math.max(0,rows.length-500)}}
+function pvHtml(r){return '<div class="px6-li"><span><b>'+r.rows.length+'</b> cards ready<small>'+r.dup+' duplicate skip · '+r.bad+' line samajh nahi aayi'+(r.cut?' · '+r.cut+' limit se bahar (max 500)':'')+'</small></span></div>'+r.rows.slice(0,3).map(function(x){return '<div class="px6-li"><span>'+esc(x.f)+'<small>'+esc(x.b)+'</small></span></div>'}).join('')}
+function pv(){var r=parseImp(sel.imp||''),e=$('px7Pv'),b=document.querySelector('[data-a="px7imp"]');if(e)e.innerHTML=r.rows.length||r.dup||r.bad?pvHtml(r):'';if(b){b.disabled=!r.rows.length;b.textContent=r.rows.length?'Import '+r.rows.length+' cards':'Import cards'}}
+function impHtml(){return '<div class="section-head px7-tog" data-a="px7tog" role="button" tabindex="0" aria-expanded="'+(sel.impOpen?'true':'false')+'" style="cursor:pointer;margin-bottom:0"><div><h2>Bulk import</h2><p>Ek saath bahut saare cards add karo</p></div><span style="display:flex;align-items:center;gap:8px"><span class="pill purple">Paste / CSV</span><span class="px7-chev" aria-hidden="true">'+(sel.impOpen?'▲':'▼')+'</span></span></div><div id="px7Body" style="margin-top:12px"'+(sel.impOpen?'':' hidden')+'><textarea class="px6-f px7-ta" id="px7I" rows="6" spellcheck="false" placeholder="abate | to reduce&#10;benevolent | kind-hearted&#10;Ek line = ek card (front | back)">'+esc(sel.imp||'')+'</textarea><p class="muted" style="font-size:12px;line-height:1.6;margin:8px 0 0">Separator: <b>|</b>, tab, <b>;</b>, <b>-</b> ya comma. Excel/Sheets se do column copy karke seedha paste bhi chalega.</p><div class="px6-2"><select class="px6-f" id="px7K" style="margin:0">'+['Vocab','Current Affairs','Fact / Formula'].map(function(k){return '<option'+(k===sel.ik?' selected':'')+'>'+k+'</option>'}).join('')+'</select><label class="btn" style="display:grid;place-items:center;margin:0;cursor:pointer">Choose file<input type="file" id="px7F" accept=".csv,.txt,.tsv,text/plain,text/csv" hidden></label></div><div id="px7Pv"></div><button class="btn px6-go" style="margin-top:12px" data-a="px7imp" disabled>Import cards</button></div>'}
+function px7Toggle(h){sel.impOpen=!sel.impOpen;var b=$('px7Body');if(b)b.hidden=!sel.impOpen;h.setAttribute('aria-expanded',sel.impOpen?'true':'false');var c=h.querySelector('.px7-chev');if(c)c.textContent=sel.impOpen?'▲':'▼';if(sel.impOpen&&b&&b.scrollIntoView)setTimeout(function(){b.scrollIntoView({behavior:'smooth',block:'nearest'})},50)}
+document.addEventListener('click',function(e){var h=e.target.closest&&e.target.closest('[data-a="px7tog"]');if(h)px7Toggle(h)});
+document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.dataset&&e.target.dataset.a==='px7tog'){e.preventDefault();px7Toggle(e.target)}});
+document.addEventListener('input',function(e){if(e.target.id==='px7I'){sel.imp=e.target.value;pv()}});
+document.addEventListener('change',function(e){var i=e.target.id;if(i==='px7K')sel.ik=e.target.value;else if(i==='px7F'&&e.target.files[0]){var f=e.target.files[0],fr=new FileReader();fr.onload=function(){sel.imp=String(fr.result||'').replace(/^\uFEFF/,'');var t=$('px7I');if(t)t.value=sel.imp;pv();toast('File load ho gayi')};fr.readAsText(f);e.target.value=''}});
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-a="px7imp"]');if(!b||b.disabled)return;var r=parseImp(sel.imp||''),t=T(),n=Date.now();if(!r.rows.length)return;
+ r.rows.forEach(function(x,i){t.cards.push({id:String(n)+'_'+i,kind:sel.ik,front:x.f,back:x.b,box:0,due:today()})});persist();sel.imp='';sel.impOpen=false;toast(r.rows.length+' cards import ho gaye');hub()});
+var _hub=hub;hub=function(){_hub.apply(this,arguments);try{enh()}catch(e){console.warn('px7',e)}};
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-ptab],[data-a="weak"],[data-a="px7g"],[data-a="px7b"]');if(!b||b.disabled)return;var a=b.dataset.a;if(b.dataset.ptab){sel.tab=b.dataset.ptab;hub()}else if(a==='weak')startWeak();else if(a==='px7b')startBlitz();else{T().goal=+b.dataset.v;persist();hub()}});
+try{home();mock();hub()}catch(e){console.warn('train',e)}
+})();
+</script>
+<style id="ps-nav-v2">
+/* Nav v2 — 5 slots on mobile, rest in a bottom sheet; grouped sidebar on desktop */
+.sidebar{overflow-y:auto;overflow-x:hidden;scrollbar-width:none}
+@media(max-height:820px){.sidebar-bottom{display:none}}
+.msheet{display:none}
+@keyframes psUp{from{opacity:0;transform:translateY(24px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes psFade{from{opacity:0}to{opacity:1}}
+@media(max-width:760px){
+.mobile-nav button{font-size:10.5px;letter-spacing:.02em}
+.msheet{position:fixed;inset:0;z-index:7;display:flex;align-items:flex-end;justify-content:center;padding:0 14px calc(98px + env(safe-area-inset-bottom));background:rgba(8,6,2,.42);overscroll-behavior:contain;animation:psFade .22s ease}
+.msheet[hidden]{display:none!important}
+.msheet-panel{width:100%;max-width:572px;padding:10px 14px 14px;border-radius:30px;background:var(--card);border:1px solid var(--bd);box-shadow:inset 0 1px 0 var(--hl),0 30px 60px -20px rgba(0,0,0,.6);animation:psUp .32s var(--ease)}
+.msheet .grab{display:block;width:38px;height:4px;border-radius:9px;background:color-mix(in srgb,var(--mu) 40%,transparent);margin:0 auto 12px}
+.msheet-title{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mu);padding:0 4px 10px}
+.msheet-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.msheet-grid button{display:grid;gap:3px;justify-items:start;align-content:start;min-height:108px;padding:14px;border:1px solid var(--bd);border-radius:22px;background:var(--c2);text-align:left}
+.msheet-grid .mi{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;margin-bottom:8px;background:var(--gl);color:var(--at)}
+.msheet-grid .mi svg{width:21px;height:21px}
+.msheet-grid strong{font-size:14px;font-weight:800;letter-spacing:-.01em;color:var(--hi)}
+.msheet-grid small{font-size:12px;line-height:1.35;color:var(--mu)}
+.msheet-grid button.active{background:var(--gl);border-color:color-mix(in srgb,var(--ac2) 45%,transparent)}
+.msheet-grid button.active .mi{background:var(--gold);color:var(--on)}
+html[data-amoled=on] .msheet-panel{background:#000;border-color:rgba(var(--rgb),.3);box-shadow:0 0 26px -8px rgba(var(--rgb),.6)}
+html[data-amoled=on] .msheet-grid button{background:rgba(var(--rgb),.06)}
+}
+@media(min-width:761px){.msheet{display:none!important}}
+</style>
+<style id="ps-train-v2">
+.px7-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.px7-t{display:grid;gap:2px;justify-items:center;text-align:center;padding:12px 4px;border-radius:20px;background:linear-gradient(180deg,var(--c1),var(--card));border:1px solid var(--bd)}
+.px7-t i{font-style:normal;font-size:16px}.px7-t b{font-size:20px;font-weight:800;letter-spacing:-.03em;color:var(--hi)}.px7-t span{font-size:10.5px;font-weight:700;color:var(--mu)}
+.px7-seg{display:flex;gap:4px;margin-top:12px;padding:5px;border-radius:999px;background:var(--c2);border:1px solid var(--bd);overflow-x:auto;scrollbar-width:none}
+.px7-seg button{flex:1;min-width:max-content;min-height:38px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--mu);font-size:13px;font-weight:800}
+.px7-seg button.on{background:var(--gold);color:var(--on);box-shadow:0 8px 18px -10px rgba(var(--rgb),.9)}
+#view-train>.card:not([hidden]){animation:psUp .3s var(--ease)}
+.px7-ref{margin-top:10px;border:1px solid var(--bd);border-radius:18px;background:var(--c2);overflow:hidden}.px7-ref summary{padding:13px 14px;font-weight:800;font-size:14px;cursor:pointer}
+.px7-g{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 12px 12px;font-size:12.5px}.px7-g span{padding:7px 4px;border-radius:10px;background:var(--card);border:1px solid var(--bd);text-align:center;white-space:nowrap}
+html[data-amoled=on] .px7-t{background:rgba(var(--rgb),.06)}
+</style>
+<style id="ps-train-v3">
+.px7-goal{background:radial-gradient(120% 100% at 0% 0%,rgba(var(--rgb),.2),transparent 60%),linear-gradient(180deg,var(--c1),var(--card))!important}
+.px7-gr{display:flex;align-items:center;gap:16px}.px7-ring{width:84px;height:84px;flex:0 0 84px}
+.px7-ring .tr{stroke:var(--c2)}.px7-ring .fg{stroke:var(--ac2);transition:stroke-dasharray .6s var(--ease);filter:drop-shadow(0 0 6px rgba(var(--rgb),.5))}
+.px7-gt b{display:block;font-size:22px;font-weight:800;letter-spacing:-.03em;color:var(--hi)}.px7-gt small{color:var(--mu);font-size:12.5px}
+.px7-hm{display:grid;grid-template-columns:repeat(14,1fr);gap:4px}
+.px7-hm i{aspect-ratio:1;border-radius:6px;background:var(--c2)}.px7-hm .l1{background:rgba(var(--rgb),.28)}.px7-hm .l2{background:rgba(var(--rgb),.58)}.px7-hm .l3{background:var(--ac2);box-shadow:0 0 8px -2px var(--ac2)}.px7-hm .now{outline:2px solid var(--ac);outline-offset:1px}
+.px7-blitz{width:100%;margin-top:14px;min-height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-radius:18px;font-weight:800;background:linear-gradient(135deg,var(--ac2),var(--ac))!important;color:var(--on)!important;border:0!important;box-shadow:0 14px 28px -14px rgba(var(--rgb),.9)}
+.px7-blitz small{font-weight:700;opacity:.8;font-size:12px}
+</style>
+<style id="ps-icons">
+.pi{width:1.15em;height:1.15em;flex:none;vertical-align:-.2em}
+.pill .pi{width:13px;height:13px;margin-right:3px;vertical-align:-2px}
+.px7-t i{width:34px;height:34px;display:grid;place-items:center;border-radius:12px;background:var(--gl);color:var(--at)}.px7-t i .pi{width:18px;height:18px;vertical-align:0}
+.px7-t:nth-child(2) i{background:rgba(80,130,255,.14);color:#5b8cff}.px7-t:nth-child(3) i{background:rgba(53,224,162,.14);color:var(--g)}.px7-t:nth-child(4) i{background:rgba(255,111,126,.14);color:var(--r)}
+.px7-blitz .pi{width:18px;height:18px;vertical-align:-3px;margin-right:4px}
+.px7-gt b .pi{width:20px;height:20px;color:var(--g);vertical-align:-3px}
+.pxd-x .pi{width:16px;height:16px;vertical-align:0}.pxd-miss .pi,.pxd-ok .pi,.px6-fb .pi{width:16px;height:16px;vertical-align:-3px;margin-right:2px}
+</style>
+<style id="ps-import">.px7-rem{width:100%;margin-bottom:10px;text-align:left}.px7-tr{display:flex;align-items:flex-end;gap:4px;height:70px}.px7-tr i{flex:1;background:var(--bd,#8884);border-radius:3px 3px 0 0}.px7-tr i.g{background:#22a06b}.px7-tr i.a{background:#e0a21b}.px7-tr i.r{background:#e5484d}.px7-chev{font-size:12px;color:var(--mu)}.px7-tog:active{opacity:.7}.px7-ta{min-height:130px;resize:vertical;font-size:14px;line-height:1.5}#px7Pv .px6-li b{font-size:15px}</style>
 </body></html>
