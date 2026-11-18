@@ -503,6 +503,88 @@ html[data-amoled=on]:root :is(.readiness-steps label.done,.rv.done){box-shadow:0
 html[data-amoled=on]:root .task:hover{border-color:rgba(var(--rgb),.45)}
 html[data-amoled=on] .cl-user{background:#000;border-color:rgba(var(--rgb),.3);box-shadow:0 0 22px -12px rgba(var(--rgb),.7)}
 </style>
+<style id="ps-frac-table">
+.px7-tw{padding:0 12px 12px;overflow-x:auto}
+.px7-ref .px7-ft{width:100%;min-width:0;table-layout:fixed;border-collapse:collapse;text-align:center;font-size:14px;background:var(--card);color:var(--tx)}
+.px7-ref .px7-ft th,.px7-ref .px7-ft td{border:1px solid var(--bd);padding:8px 4px;text-align:center;white-space:nowrap;font-size:14px;line-height:1.2}
+.px7-ref .px7-ft th{font-weight:800;font-size:13px;padding:11px 4px;white-space:normal}
+.px7-ref .px7-ft th:first-child,.px7-ref .px7-ft td:first-child{width:28%;font-weight:600}
+.px7-mf{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 2px 0 4px;font-size:11px;line-height:1.15}
+.px7-mf i{font-style:normal;display:block;padding:0 2px;min-width:1em;text-align:center}
+.px7-mf i:first-child{border-bottom:1px solid currentColor}
+@media(max-width:380px){.px7-ref .px7-ft td,.px7-ref .px7-ft th{font-size:12.5px}.px7-mf{font-size:10px}}
+</style>
+<style id="ps-smooth-tap">
+/* No more blink: cards no longer start invisible on every tab switch. Only a soft, quick page settle. */
+.view.active>*{animation:none!important}
+.view.active{animation:psSettle .22s cubic-bezier(.22,.8,.3,1)}
+@keyframes psSettle{from{opacity:.55;transform:translate3d(0,6px,0)}to{opacity:1;transform:none}}
+.mobile-more-menu{animation:psPop .2s cubic-bezier(.22,.8,.3,1);transform-origin:bottom right}
+@keyframes psPop{from{opacity:0;transform:translate3d(0,8px,0) scale(.96)}to{opacity:1;transform:none}}
+/* soft press feedback on menu items */
+.mobile-nav button,.nav button,.mobile-more-menu button{transition:background-color .15s ease,color .15s ease,transform .15s ease}
+.mobile-nav button:active,.nav button:active{transform:scale(.94)}
+.mobile-more-menu button:active{background:var(--gl);transform:scale(.98)}
+/* touch screens: no sticky hover flash after a tap */
+@media(hover:none){.nav button:hover svg{transform:none}.mobile-more-menu button:hover{background:none}.mobile-more-menu button:active{background:var(--gl)}}
+</style>
+<style id="ps-polish">
+/* ===== Professional polish: calmer surfaces, tighter type, consistent rhythm ===== */
+:root{--r-card:22px;--r-ctl:14px;--sh:0 1px 2px rgba(40,30,0,.05),0 10px 24px -16px rgba(70,50,0,.22)}
+html[data-theme=dark]{--sh:0 1px 0 rgba(255,255,255,.03) inset,0 14px 30px -20px rgba(0,0,0,.9)}
+body{font-feature-settings:"cv11","ss01";letter-spacing:-.006em}
+.main{max-width:1120px}
+/* header */
+.eyebrow{font-size:11.5px;padding:5px 12px}
+.focus-card .eyebrow{letter-spacing:.01em;margin-bottom:12px}
+h1{letter-spacing:-.04em;line-height:1.05}
+/* cards */
+.card,.topic,.mcard{border-radius:var(--r-card)!important}
+.card{padding:20px}
+@media(min-width:761px){.card{padding:24px}}
+.section-head{margin-bottom:14px}
+.section-head h2{font-size:16.5px;letter-spacing:-.025em}
+.section-head p{font-size:12px;line-height:1.45}
+/* buttons: flatter gold, less glossy */
+.btn.primary,.px6-go,.focus-card .btn{background:linear-gradient(180deg,var(--ac2),var(--ac))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 8px 18px -12px var(--ac)!important;letter-spacing:.005em}
+.btn,.iconbtn{transition:background-color .18s,border-color .18s,box-shadow .18s,transform .15s}
+.px6-go{min-height:48px;font-size:14.5px}
+.pill{font-weight:700;letter-spacing:.01em}
+/* daily workout week dots */
+.px6-wk{gap:7px;margin:14px 0 16px}
+.px6-dot{max-width:36px;font-size:10.5px;letter-spacing:.02em}
+/* stats strip */
+.hd-stats{padding:4px!important}
+.hd-stat{padding:16px 6px 14px}
+.hd-stat b{font-size:24px}
+.hd-stat small{font-size:11px;letter-spacing:0;font-weight:700}
+/* today's plan: clean divided rows instead of heavy boxes */
+.task-list{gap:0}
+.task{background:none!important;border:0!important;border-bottom:1px solid var(--bd)!important;border-radius:0!important;padding:14px 2px!important;gap:14px}
+.task:last-child{border-bottom:0!important}
+.task strong{font-size:14px;letter-spacing:-.01em}
+.task small{font-size:12px;line-height:1.55;opacity:.95}
+.task .pill{font-size:10px;letter-spacing:.06em;padding:4px 9px;text-transform:uppercase}
+.task input[type=checkbox]{border-radius:8px}
+/* progress bars */
+.bar{height:6px;background:color-mix(in srgb,var(--tx) 7%,transparent)}
+.subject-list{gap:14px}
+.subject-row{align-items:center}
+.subject-row b,.subject-row strong{font-size:13px;font-weight:700}
+/* calendar */
+.mini-calendar{gap:6px}
+.mini-calendar .day{font-size:12px;font-weight:700}
+/* bottom nav: slimmer, quieter */
+.mobile-nav{padding:5px;border-radius:26px;box-shadow:0 1px 0 var(--hl) inset,0 18px 40px -18px rgba(0,0,0,.45)}
+.mobile-nav button{min-height:50px;gap:3px;font-size:10px;letter-spacing:.02em}
+.mobile-nav button svg{width:20px;height:20px}
+/* inputs */
+input,select,textarea{border-radius:var(--r-ctl)}
+:focus-visible{outline:2px solid var(--ac2);outline-offset:2px;border-radius:10px}
+/* page spacing rhythm */
+.view>.card,.view>.hd-grid,.view>.grid{margin-bottom:14px}
+@media(max-width:760px){.main{padding-left:16px;padding-right:16px}}
+</style>
 </head>
 <body>
 <div class="app">
@@ -1386,8 +1468,7 @@ view();boot();
 /* App feel: no pinch-zoom */
 (function(){
 ['gesturestart','gesturechange','gestureend'].forEach(function(t){document.addEventListener(t,function(e){e.preventDefault()},{passive:false})});
-document.addEventListener('touchmove',function(e){if(e.touches&&e.touches.length>1)e.preventDefault()},{passive:false});
-document.addEventListener('wheel',function(e){if(e.ctrlKey)e.preventDefault()},{passive:false});
+/* touchmove/wheel preventDefault listeners removed: they made every scroll wait on JS (lag). Pinch-zoom is already blocked by touch-action:pan-x pan-y. */
 })();
 </script>
 <script>if("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
@@ -2035,9 +2116,10 @@ var _g=go;go=function(v){var r=_g.apply(this,arguments);try{if(v==='train')hub()
 sel.tab='drill';
 function startWeak(){var w=T().weak,ks=Object.keys(w);if(!ks.length){toast('Abhi koi weak question nahi hai');return}run={kind:'drill',type:'weak',qs:shuf(ks).slice(0,20).map(function(k){return{q:k,a:w[k].a,t:w[k].t}}),i:0,ok:0,miss:0,t0:Date.now(),fb:null};draw()}
 function refCard(){var sq='',cu='',fr='';for(var i=1;i<=50;i++)sq+='<span>'+i+'² = '+i*i+'</span>';for(i=1;i<=30;i++)cu+='<span>'+i+'³ = '+i*i*i+'</span>';
- [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,20].forEach(function(n){var p=100/n;fr+='<span>1/'+n+' = '+(Math.round(p*100)/100)+'%</span>'});
+ var FR=[[2,'50'],[3,'33',1,3,'33.33'],[4,'25'],[5,'20'],[6,'16',2,3,'16.66'],[7,'14',2,7,'14.28'],[8,'12',1,2,'12.50'],[9,'11',1,9,'11.11'],[10,'10'],[11,'9',1,11,'9.09'],[12,'8',1,3,'8.33'],[13,'7',9,13,'7.69'],[14,'7',1,7,'7.14'],[15,'6',2,3,'6.66'],[16,'6',1,4,'6.25'],[17,'5',15,17,'5.88'],[18,'5',5,9,'5.55'],[19,'5',5,19,'5.26'],[20,'5']];
+ fr='<div class="px7-tw"><table class="px7-ft"><thead><tr><th>Fraction</th><th>Percentage Equivalent</th></tr></thead><tbody>'+FR.map(function(r){var v=r.length>2?r[1]+'<span class="px7-mf"><i>'+r[2]+'</i><i>'+r[3]+'</i></span>% = '+r[4]+' %':r[1]+' %';return '<tr><td>1/'+r[0]+'</td><td>'+v+'</td></tr>'}).join('')+'</tbody></table></div>';
  var d=function(t,g){return '<details class="px7-ref"><summary>'+t+'</summary><div class="px7-g">'+g+'</div></details>'};
- return '<div class="section-head"><div><h2>Quick reference</h2><p>Calculation speed ke liye yaad rakho</p></div></div>'+d('Squares 1–50',sq)+d('Cubes 1–30',cu)+d('Fraction → %',fr)+fx()}
+ return '<div class="section-head"><div><h2>Quick reference</h2><p>Calculation speed ke liye yaad rakho</p></div></div>'+d('Squares 1–50',sq)+d('Cubes 1–30',cu)+'<details class="px7-ref"><summary>Fraction → %</summary>'+fr+'</details>'+fx()}
 function trendHtml(){var t=T(),td=today(),m={},i,mx=1,h='';t.drills.forEach(function(d){var o=m[d.date]||(m[d.date]={n:0,ok:0});o.n+=d.n;o.ok+=d.ok});
  var acc=function(a,b){var n=0,k=0;for(var j=a;j<=b;j++){var o=m[addD(td,-j)];if(o){n+=o.n;k+=o.ok}}return n?Math.round(k/n*100):null};
  for(i=13;i>=0;i--){var o=m[addD(td,-i)];if(o&&o.n>mx)mx=o.n}
