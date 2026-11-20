@@ -5,7 +5,8 @@
 <meta name="theme-color" content="#f6f3ec">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.png" type="image/png">
-<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="PrepSpace">
 <meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="application-name" content="PrepSpace">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 <style id="prepspace-premium">
@@ -1843,7 +1844,43 @@ view();boot();
 /* touchmove/wheel preventDefault listeners removed: they made every scroll wait on JS (lag). Pinch-zoom is already blocked by touch-action:pan-x pan-y. */
 })();
 </script>
-<script>if("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
+<script id="ps-offline-js">
+/* PrepSpace offline layer: service worker, safe auto-update, offline badge, persistent storage */
+(function(){
+  var secure=location.protocol==="https:"||location.hostname==="localhost"||location.hostname==="127.0.0.1";
+  /* storage ko browser se delete hone se bachao (offline data safe rahe) */
+  try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist().catch(function(){})}catch(e){}
+
+  /* offline / back-online badge */
+  var st=document.createElement("style");
+  st.textContent="#psNet{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 58px);transform:translate(-50%,-12px);z-index:99999;padding:8px 16px;border-radius:99px;font:700 12.5px/1.2 var(--fs,system-ui,sans-serif);background:var(--card,#fff);color:var(--tx,#111);border:1px solid var(--bd,rgba(0,0,0,.12));box-shadow:0 12px 28px -12px rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;white-space:nowrap;max-width:92vw;overflow:hidden;text-overflow:ellipsis}#psNet.show{opacity:1;transform:translate(-50%,0)}#psNet:before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;background:var(--r,#cd3b4d)}#psNet.ok:before{background:var(--g,#0b8f5e)}";
+  document.head.appendChild(st);
+  var badge=document.createElement("div");badge.id="psNet";badge.setAttribute("role","status");badge.setAttribute("aria-live","polite");
+  function ready(fn){document.body?fn():document.addEventListener("DOMContentLoaded",fn)}
+  ready(function(){document.body.appendChild(badge);if(!navigator.onLine)setOff()});
+  var hideT;
+  function setOff(){clearTimeout(hideT);badge.className="show";badge.textContent="You\u2019re offline \u2014 your data is saved on this device"}
+  function setOn(){clearTimeout(hideT);badge.className="show ok";badge.textContent="Back online";hideT=setTimeout(function(){badge.className=""},2400)}
+  addEventListener("offline",setOff);addEventListener("online",setOn);
+
+  if(!("serviceWorker" in navigator)||!secure)return;
+  var hadController=!!navigator.serviceWorker.controller,pendingReload=false;
+  /* naya version aaye to tabhi reload karo jab app background me ho (form beech me na toote) */
+  navigator.serviceWorker.addEventListener("controllerchange",function(){
+    if(!hadController){hadController=true;return}
+    if(document.visibilityState==="hidden")location.reload();else pendingReload=true;
+  });
+  document.addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden"&&pendingReload){pendingReload=false;location.reload()}});
+  addEventListener("load",function(){
+    navigator.serviceWorker.register("./sw.js").then(function(reg){
+      var chk=function(){reg.update().catch(function(){})};
+      document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")chk()});
+      addEventListener("online",chk);
+      setInterval(chk,60*60*1000);
+    }).catch(function(){});
+  });
+})();
+</script>
 <script>
 (function(){const root=document.documentElement,box=document.getElementById('paletteOptions');if(!box)return;
 function sync(){const cur=root.dataset.palette||'gold';box.querySelectorAll('.palette-option').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.palette===cur)));
@@ -2741,5 +2778,98 @@ html{scroll-behavior:auto}html,body{overflow-x:clip}
   new MutationObserver(schedule).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['class','hidden']})}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
+</script>
+<style id="ps-nav-redesign">
+/* ===== PrepSpace navigation redesign: expanding-pill dock (mobile) + calm icon rail (desktop) ===== */
+:root{--dock-spring:cubic-bezier(.34,1.3,.5,1);--dock-out:cubic-bezier(.22,1,.36,1)}
+@keyframes dockPop{0%{scale:.6;rotate:-14deg}55%{scale:1.22;rotate:4deg}100%{scale:1;rotate:0deg}}
+@keyframes sheetIn{from{opacity:0;translate:0 22px;scale:.97}to{opacity:1;translate:0 0;scale:1}}
+
+/* ---------- MOBILE ---------- */
+@media(max-width:760px){
+ html body .mobile-nav{left:12px;right:12px;max-width:440px;margin:0 auto;bottom:max(12px,env(safe-area-inset-bottom));height:66px;padding:6px;gap:2px;align-items:stretch;border-radius:33px!important;overflow:hidden;
+  background:var(--card)!important;border:1px solid var(--bd2)!important;
+  box-shadow:0 20px 40px -18px rgba(0,0,0,.5),inset 0 1px 0 var(--hl)!important;
+  transition:transform .5s var(--dock-out)!important}
+ html body .mobile-nav.nav-hidden{transform:translateY(calc(100% + 32px))!important}
+ html body .mobile-nav .ind{display:none!important}
+ html body .mobile-nav button{flex:1 1 0;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:0;min-height:0;height:100%;padding:0;
+  border-radius:27px!important;background:none;color:var(--mu);font-size:12.5px;font-weight:800;letter-spacing:0;
+  transition:flex-grow .55s var(--dock-spring),background-color .3s,color .3s,box-shadow .3s,transform .15s!important}
+ html body .mobile-nav button:active{transform:scale(.92)}
+ html body .mobile-nav button svg{width:22px;height:22px;flex:none;transform:none!important;filter:none!important;transition:none}
+ html body .mobile-nav button span{display:block;max-width:0;opacity:0;margin-left:0;overflow:hidden;white-space:nowrap;text-overflow:clip;
+  transition:max-width .5s var(--dock-out),opacity .2s ease,margin-left .5s var(--dock-out)}
+ html body .mobile-nav button.active{flex-grow:2.5;background:var(--gold)!important;color:var(--on)!important;
+  box-shadow:0 8px 18px -8px rgba(var(--rgb),.95),inset 0 1px 0 rgba(255,255,255,.35)!important}
+ html body .mobile-nav button.active svg{animation:dockPop .55s var(--dock-out)}
+ html body .mobile-nav button.active span{max-width:84px;opacity:1;margin-left:7px;transition:max-width .5s var(--dock-out),opacity .25s ease .12s,margin-left .5s var(--dock-out)}
+ html[data-amoled=on] body .mobile-nav{background:#000!important;border-color:rgba(var(--rgb),.3)!important}
+
+ /* More sheet -> clean action list */
+ html body .msheet{padding:0 12px calc(92px + env(safe-area-inset-bottom));background:rgba(6,5,2,.5)}
+ html body .msheet-panel{max-width:440px;padding:8px 10px 10px;border-radius:30px;border:1px solid var(--bd2);animation:sheetIn .38s var(--dock-out);transform-origin:50% 100%}
+ html body .msheet .grab{margin:2px auto 8px}
+ html body .msheet-title{padding:0 8px 8px;font-size:13px;font-weight:800;letter-spacing:0;text-transform:none;color:var(--mu)}
+ html body .msheet-grid{grid-template-columns:1fr;gap:4px}
+ html body .msheet-grid button{display:grid;grid-template-columns:44px 1fr;grid-template-rows:auto auto;column-gap:14px;row-gap:1px;align-items:center;justify-items:start;min-height:64px;padding:10px 12px;border:0;border-radius:20px;background:none}
+ html body .msheet-grid .mi{grid-column:1;grid-row:1/3;width:44px;height:44px;margin:0;border-radius:15px}
+ html body .msheet-grid strong{grid-column:2;grid-row:1;align-self:end;font-size:15px}
+ html body .msheet-grid small{grid-column:2;grid-row:2;align-self:start}
+ html body .msheet-grid button:active{background:var(--c2)}
+ html body .msheet-grid button.active{background:var(--gl);box-shadow:none}
+ html body .msheet-grid button.active .mi{background:var(--gold);color:var(--on)}
+
+ /* top title bar: solid + scroll progress line */
+ html body #tb{height:calc(48px + env(safe-area-inset-top,0px));background:var(--card)!important;border-bottom:1px solid var(--bd2);font-size:14.5px;font-weight:800;box-shadow:0 10px 24px -20px rgba(0,0,0,.5)}
+ html body #tb::after{content:"";position:absolute;left:0;bottom:-1px;height:2px;width:calc(var(--sp,0)*100%);background:var(--gold);border-radius:0 2px 2px 0;transition:width .12s linear}
+}
+
+/* ---------- DESKTOP / TABLET ---------- */
+@media(min-width:761px){
+ html body .sidebar{width:76px;left:14px;top:14px;bottom:14px;padding:16px 11px 12px;gap:6px;border-radius:32px;
+  background:var(--card)!important;border:1px solid var(--bd2)!important;box-shadow:0 22px 46px -28px rgba(0,0,0,.45)!important;
+  transition:width .5s var(--dock-out),box-shadow .35s!important}
+ html body .sidebar:hover,html body .sidebar:has(:focus-visible){width:264px;box-shadow:0 40px 80px -30px rgba(0,0,0,.55),0 0 0 1px rgba(var(--rgb),.28)!important}
+ html body .sidebar .brand{padding:0 0 8px}
+ html body .sidebar .brandmark{margin-left:4px}
+
+ /* group labels: hairline when collapsed, text when open */
+ html body .sidebar .navlabel{opacity:1;width:auto;height:1px;margin:8px 10px;padding:0;gap:0;font-size:0;letter-spacing:0;background:var(--bd2);transition:none}
+ html body .sidebar .navlabel:before{display:none}
+ html body .sidebar:hover .navlabel,html body .sidebar:has(:focus-visible) .navlabel{height:auto;margin:14px 0 2px;padding:0 10px;background:none;font-size:12px;font-weight:800;text-transform:none;letter-spacing:.01em;color:var(--mu)}
+
+ html body .sidebar .nav{gap:4px}
+ html body .sidebar .nav button{width:100%;min-height:54px;padding:0;gap:0;font-size:0;font-weight:700;border-radius:20px!important;background:none!important;box-shadow:none!important;color:var(--mu);overflow:hidden}
+ html body .sidebar .nav button svg{width:46px;height:46px;flex:0 0 46px;padding:12px;margin:4px!important;border-radius:20px;background:none!important;color:inherit;box-shadow:none!important;transition:background-color .3s,color .3s,transform .35s var(--dock-spring)}
+ html body .sidebar .nav button:hover{color:var(--tx)}
+ html body .sidebar .nav button:hover svg{background:var(--c2)!important;transform:scale(1.05)}
+ html body .sidebar .nav button.active{color:var(--at)}
+ html body .sidebar .nav button.active svg{background:var(--gold)!important;color:var(--on);box-shadow:0 10px 20px -10px rgba(var(--rgb),.95)!important}
+ html body .sidebar .nav button.active:after{display:none}
+ html body .sidebar:hover .nav button,html body .sidebar:has(:focus-visible) .nav button{font-size:14px;padding-right:14px}
+ html body .sidebar:hover .nav button:hover,html body .sidebar:has(:focus-visible) .nav button:hover{background:var(--c2)!important}
+ html body .sidebar:hover .nav button.active,html body .sidebar:has(:focus-visible) .nav button.active{background:var(--gl)!important}
+ html body .sidebar:hover .nav button:hover svg{transform:none;background:none!important}
+ html body .sidebar:hover .nav button.active svg{background:var(--gold)!important}
+ html[data-amoled=on] body .sidebar{background:#000!important;border-color:rgba(var(--rgb),.3)!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+ html body .mobile-nav,html body .mobile-nav button,html body .mobile-nav button span,html body .sidebar,html body .sidebar .nav button svg{transition:none!important}
+ html body .mobile-nav button.active svg,html body .msheet-panel{animation:none!important}
+}
+</style>
+<script>
+/* nav redesign: dock hides on scroll-down, returns on scroll-up; top bar shows scroll progress */
+(function(){const nav=document.getElementById('mobileNav'),tb=document.getElementById('tb'),more=document.getElementById('mobileMoreMenu');if(!nav)return;
+let y=scrollY,q=false,hid=false;
+function show(){if(hid){nav.classList.remove('nav-hidden');hid=false}}
+function tick(){q=false;const c=scrollY,d=c-y,max=document.documentElement.scrollHeight-innerHeight;y=c;
+ if(tb)tb.style.setProperty('--sp',max>0?Math.min(1,Math.max(0,c/max)).toFixed(3):'0');
+ if((more&&!more.hidden)||c<80||c>max-60){show();return}
+ if(d>6&&!hid){nav.classList.add('nav-hidden');hid=true}else if(d<-4)show()}
+addEventListener('scroll',()=>{if(!q){q=true;requestAnimationFrame(tick)}},{passive:true});
+nav.addEventListener('click',show);tick()})();
 </script>
 </body></html>
