@@ -793,7 +793,7 @@ input:not([type=checkbox]):not([type=radio]):focus,select:focus,textarea:focus{b
 </style>
 <script id="ps-fx-js">
 /* tap ripple */
-(function(){document.addEventListener('pointerdown',function(e){var b=e.target.closest&&e.target.closest('button,.btn,.filter,.acc-head,.task');
+(function(){document.addEventListener('pointerdown',function(e){var b=e.target.closest&&e.target.closest('button,.btn,.filter,.acc-head,.task');if(b&&b.closest('.mobile-nav'))return;
  if(!b||b.disabled)return;var r=b.getBoundingClientRect(),d=Math.max(r.width,r.height)*1.6,x=document.createElement('span');
  x.className='ps-rip';x.style.cssText='width:'+d+'px;height:'+d+'px;left:'+(e.clientX-r.left-d/2)+'px;top:'+(e.clientY-r.top-d/2)+'px';
  b.appendChild(x);setTimeout(function(){x.remove()},650)},{passive:true})})();
@@ -1859,7 +1859,7 @@ view();boot();
   function ready(fn){document.body?fn():document.addEventListener("DOMContentLoaded",fn)}
   ready(function(){document.body.appendChild(badge);if(!navigator.onLine)setOff()});
   var hideT;
-  function setOff(){clearTimeout(hideT);badge.className="show";badge.textContent="You\u2019re offline \u2014 your data is saved on this device"}
+  function setOff(){clearTimeout(hideT);badge.className="show";badge.textContent="You\u2019re offline \u2014 your data is saved on this device";hideT=setTimeout(function(){badge.className=""},3500)}
   function setOn(){clearTimeout(hideT);badge.className="show ok";badge.textContent="Back online";hideT=setTimeout(function(){badge.className=""},2400)}
   addEventListener("offline",setOff);addEventListener("online",setOn);
 
@@ -2871,5 +2871,27 @@ function tick(){q=false;const c=scrollY,d=c-y,max=document.documentElement.scrol
  if(d>6&&!hid){nav.classList.add('nav-hidden');hid=true}else if(d<-4)show()}
 addEventListener('scroll',()=>{if(!q){q=true;requestAnimationFrame(tick)}},{passive:true});
 nav.addEventListener('click',show);tick()})();
+</script>
+<style id="ps-nav-final">
+/* nav: no press/ripple effect, frosted-glass blur */
+html body .mobile-nav button,html body .mobile-nav button:active,html body .mobile-nav button:focus,html body .mobile-nav button:hover{transform:none!important;-webkit-tap-highlight-color:transparent;outline:none}
+html body .mobile-nav .ps-rip{display:none!important}
+html body .mobile-nav{background:color-mix(in srgb,var(--card) 42%,transparent)!important;-webkit-backdrop-filter:blur(26px) saturate(1.8)!important;backdrop-filter:blur(26px) saturate(1.8)!important;border:1px solid color-mix(in srgb,var(--tx) 14%,transparent)!important;box-shadow:0 18px 40px -16px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.14)!important}
+html[data-amoled=on] body .mobile-nav{background:rgba(0,0,0,.45)!important}
+</style>
+<style id="ps-more-grid">
+/* More sheet: 2x2 equal tiles */
+@media(max-width:760px){
+html body .msheet-grid{grid-template-columns:1fr 1fr!important;grid-auto-rows:1fr;gap:10px!important}
+html body .msheet-grid button{display:flex!important;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:3px;min-height:112px;padding:14px!important;border:1px solid var(--bd)!important;border-radius:22px!important;background:var(--c2)!important}
+html body .msheet-grid .mi{margin:0 0 8px!important;width:42px!important;height:42px!important}
+html body .msheet-grid strong,html body .msheet-grid small{grid-column:auto;grid-row:auto}
+html body .msheet-grid button.active{background:var(--gl)!important;border-color:color-mix(in srgb,var(--ac2) 45%,transparent)!important}
+html body .msheet-grid button:active{transform:none}
+}
+</style>
+<script>
+/* keep app portrait (works in installed PWA / fullscreen) */
+try{if(screen.orientation&&screen.orientation.lock)screen.orientation.lock('portrait').catch(function(){})}catch(e){}
 </script>
 </body></html>

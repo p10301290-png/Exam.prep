@@ -1,19 +1,31 @@
 {
-  "id": "./",
-  "name": "PrepSpace — SSC CHSL Journal",
-  "short_name": "PrepSpace",
-  "description": "Study planner, test log and mistake bank for SSC CHSL preparation. Works offline.",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "orientation": "any",
-  "background_color": "#f6f3ec",
-  "theme_color": "#f6f3ec",
-  "lang": "en",
-  "categories": ["education", "productivity"],
-  "icons": [
-    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "./icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
-  ]
+ "name": "PrepSpace",
+ "short_name": "PrepSpace",
+ "description": "SSC CHSL / MTS study journal",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#0d1322",
+ "theme_color": "#0d1322",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ]
 }
